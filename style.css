@@ -1,0 +1,913 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg1: #ffffff;
+  --bg2: #747477;
+  --panel: rgba(255, 255, 255, 0.08);
+  --panel-border: rgba(255, 255, 255, 0.12);
+  --text: #ffffff;
+  --muted: #c8cce0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #90c8e2 0%, #353636 40%, rgb(133, 185, 228) 100%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left,
+.right {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(5, 5, 5, 0.3);
+  padding: 20px;
+}
+
+.left {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 320px;
+}
+
+h1, h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.card-shell {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  border-radius: 40px;
+  padding: 6px;
+  margin-bottom: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, filter 0.25s ease;
+  background: linear-gradient(135deg, #b8b6b6, #818080);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.card-shell:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.38),
+    0 0 24px rgba(255, 255, 255, 0.12);
+}
+
+.card-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    linear-gradient(
+      130deg,
+      rgba(255,255,255,0.38) 0%,
+      rgba(255,255,255,0.16) 10%,
+      rgba(255,255,255,0.06) 22%,
+      rgba(255,255,255,0.02) 35%,
+      transparent 52%
+    );
+  mix-blend-mode: screen;
+  opacity: 0.95;
+}
+
+.card-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+  pointer-events: none;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(255,255,255,0.18) 0 8%, transparent 28%),
+    radial-gradient(circle at 82% 86%, rgba(255,255,255,0.08) 0 10%, transparent 30%);
+  opacity: 0.7;
+}
+
+.card-shell.rarity-mortal {
+  background: linear-gradient(135deg, #9ea7b8, #5f6877);
+  box-shadow: 0 0 18px rgba(180, 190, 210, 0.22);
+}
+
+.card-shell.rarity-blessed {
+  background: linear-gradient(135deg, #c99ccf, #9a61a5);
+  box-shadow: 0 0 20px rgba(201, 156, 207, 0.30);
+}
+
+.card-shell.rarity-astral {
+  background: linear-gradient(135deg, #5dade2, #1f618d);
+  box-shadow: 0 0 22px rgba(93, 173, 226, 0.35);
+}
+
+.card-shell.rarity-ascended {
+  background: linear-gradient(135deg, #af7ac5, #6c3483);
+  background-size: 200% 200%;
+  animation: mythicGlow 4s ease infinite;
+  box-shadow: 0 0 26px rgba(175, 122, 197, 0.40);
+}
+
+.card-shell.rarity-mythic {
+  background: linear-gradient(135deg, #f5b041, #ca6f1e);
+  background-size: 200% 200%;
+  animation: mythicGlow 4s ease infinite;
+  box-shadow: 0 0 28px rgba(245, 176, 65, 0.45);
+}
+
+.card-shell.rarity-divine {
+  background: linear-gradient(135deg, #a22d7b, #92276d, #5d1142);
+  background-size: 200% 200%;
+  animation: mythicGlow 4s ease infinite;
+  box-shadow: 0 0 32px rgba(252, 143, 157, 0.5);
+}
+
+.card-shell.rarity-ethereal {
+  background: linear-gradient(135deg, #fd8eb3, #f0c1cd, #f85b8a);
+  background-size: 200% 200%;
+  animation: mythicGlow 4s ease infinite;
+  box-shadow: 0 0 32px rgba(255, 111, 164, 0.75);
+}
+
+.card-shell.rarity-celestial {
+  background: linear-gradient(135deg, #6078ff, #3d54bb, #18a2f1);
+  background-size: 200% 200%;
+  animation: mythicGlow 4s ease infinite;
+  box-shadow: 0 0 32px rgba(90, 40, 228, 0.55);
+}
+
+.card-shell.rarity-transcendant {
+  background: linear-gradient(135deg, #00415f, #1165b4, #032558);
+  background-size: 200% 200%;
+  animation: mythicGlow 4s ease infinite;
+  box-shadow: 0 0 32px rgba(39, 76, 243, 0.55);
+}
+
+.card-shell.rarity-primordial {
+  background: linear-gradient(135deg, #4d008b, #8e44ad, #6804a1);
+  background-size: 200% 200%;
+  animation: mythicGlow 4s ease infinite;
+  box-shadow: 0 0 32px rgba(163, 102, 214, 0.55);
+}
+
+.card-shell.rarity-cosmic {
+  background: linear-gradient(135deg, #0e0158, #4824eb, #930cd1);
+  background-size: 200% 200%;
+  animation: mythicGlow 4s ease infinite, cosmicBorder 8s linear infinite;
+  box-shadow:
+    0 0 18px rgba(126, 87, 255, 0.45),
+    0 0 40px rgba(76, 16, 173, 0.5);
+}
+
+.card-shell.rarity-eclipse {
+  background: linear-gradient(135deg, #230031, #310170, #680063);
+  background-size: 200% 200%;
+  animation: mythicGlow 4s ease infinite, eclipseGlow 4s ease infinite;
+  box-shadow:
+    0 0 22px rgba(124, 50, 158, 0.6),
+    0 0 44px rgba(35, 0, 49, 0.55);
+}
+
+.card-shell.rarity-mythic::before,
+.card-shell.rarity-divine::before,
+.card-shell.rarity-ethereal::before,
+.card-shell.rarity-celestial::before,
+.card-shell.rarity-transcendant::before,
+.card-shell.rarity-primordial::before,
+.card-shell.rarity-cosmic::before,
+.card-shell.rarity-eclipse::before {
+  background:
+    linear-gradient(
+      120deg,
+      rgba(255,255,255,0.12) 0%,
+      rgba(255,255,255,0.32) 16%,
+      rgba(255,255,255,0.06) 30%,
+      transparent 48%,
+      rgba(255,255,255,0.14) 65%,
+      transparent 78%
+    );
+  background-size: 220% 220%;
+  animation: holoSweep 6s linear infinite;
+}
+
+.rarity-overlay.beam-ascended span {
+  color: #d29cff;
+  background: rgba(175, 122, 197, 0.16);
+  box-shadow: 0 0 26px rgba(175, 122, 197, 0.28);
+}
+
+.rarity-overlay.beam-mythic span {
+  color: #ffc76a;
+  background: rgba(245, 176, 65, 0.16);
+  box-shadow: 0 0 26px rgba(245, 176, 65, 0.28);
+}
+
+.rarity-overlay.beam-divine span {
+  color: #a22d7b;
+  background: rgba(162, 45, 123, 0.16);
+  box-shadow: 0 0 30px rgba(162, 45, 123, 0.28);
+}
+
+.rarity-overlay.beam-ethereal span {
+  color: #fd8eb3;
+  background: rgba(253, 142, 179, 0.16);
+  box-shadow: 0 0 30px rgba(253, 142, 179, 0.28);
+}
+
+.rarity-overlay.beam-celestial span {
+  color: #6078ff;
+  background: rgba(96, 120, 255, 0.16);
+  box-shadow: 0 0 30px rgba(96, 120, 255, 0.28);
+}
+
+.rarity-overlay.beam-transcendant span {
+  color: #00415f;
+  background: rgba(0, 65, 95, 0.18);
+  box-shadow: 0 0 30px rgba(0, 65, 95, 0.28);
+}
+
+.rarity-overlay.beam-primordial span {
+  color: #4d008b;
+  background: rgba(77, 0, 139, 0.16);
+  box-shadow: 0 0 30px rgba(77, 0, 139, 0.28);
+}
+
+.rarity-overlay.beam-cosmic span {
+  color: #0e0158;
+  background: rgba(14, 1, 88, 0.18);
+  box-shadow: 0 0 34px rgba(14, 1, 88, 0.3);
+}
+
+.rarity-overlay.beam-eclipse span {
+  color: #230031;
+  background: rgba(35, 0, 49, 0.22);
+  box-shadow: 0 0 38px rgba(35, 0, 49, 0.32);
+}
+
+@keyframes mythicGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes holoSweep {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.75;
+  }
+  50% {
+    background-position: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 0% 50%;
+    opacity: 0.75;
+  }
+}
+
+@keyframes cosmicBorder {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes eclipseGlow {
+  0% {
+    box-shadow:
+      0 0 20px rgba(120,0,200,.5),
+      0 0 40px rgba(200,0,255,.3);
+  }
+  50% {
+    box-shadow:
+      0 0 30px rgba(200,0,255,.7),
+      0 0 60px rgba(120,0,200,.4);
+  }
+  100% {
+    box-shadow:
+      0 0 20px rgba(120,0,200,.5),
+      0 0 40px rgba(200,0,255,.3);
+  }
+}
+
+.image-box,
+#imageBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 32px;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.image-box img,
+.image-box video,
+#imageBox img,
+#imageBox video {
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+  display: block;
+}
+
+.rolling {
+  animation: shake 0.45s ease-in-out infinite;
+  filter: brightness(1.15);
+}
+
+.reveal {
+  animation: revealPop 0.45s ease;
+}
+
+.preview-card {
+  opacity: 0.68;
+  filter: blur(2px) brightness(0.92);
+  transform: scale(1.05);
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-3px, 2px) rotate(-1deg); }
+  40% { transform: translate(3px, -2px) rotate(1deg); }
+  60% { transform: translate(-2px, -1px) rotate(-1deg); }
+  80% { transform: translate(2px, 2px) rotate(1deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes revealPop {
+  0% { transform: scale(0.92); opacity: 0.6; }
+  60% { transform: scale(1.04); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.sparkle {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 32px;
+  opacity: 0;
+  z-index: 3;
+}
+
+.sparkle.active.ascended,
+.sparkle.active.mythic,
+.sparkle.active.divine,
+.sparkle.active.ethereal,
+.sparkle.active.celestial,
+.sparkle.active.transcendant,
+.sparkle.active.primordial,
+.sparkle.active.cosmic,
+.sparkle.active.eclipse {
+  opacity: 1;
+  animation: sparkleFlash 0.8s ease;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.7) 0 2px, transparent 3px),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,0.7) 0 2px, transparent 3px),
+    radial-gradient(circle at 35% 75%, rgba(255,255,255,0.65) 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 80%, rgba(255,255,255,0.75) 0 2px, transparent 3px);
+}
+
+@keyframes sparkleFlash {
+  0% { opacity: 0; transform: scale(0.96); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: scale(1.03); }
+}
+
+.rarity-badge {
+  margin-bottom: 12px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 3px solid rgba(54, 53, 53, 0.15);
+  background: rgba(85, 84, 84, 0.753);
+}
+
+.rarity-mortal { color: #d7deea; }
+.rarity-blessed { color: #c99ccf; }
+.rarity-astral { color: #7cc9ff; }
+.rarity-ascended { color: #d29cff; }
+.rarity-mythic { color: #ffc76a; }
+.rarity-divine { color: #a22d7b; }
+.rarity-ethereal { color: #fd8eb3; }
+.rarity-celestial { color: #6078ff; }
+.rarity-transcendant { color: #00415f; }
+.rarity-primordial { color: #4d008b; }
+.rarity-cosmic { color: #0e0158; }
+.rarity-eclipse { color: #230031; }
+
+.info {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 720px;
+}
+
+.info p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.substats {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.stat-pill {
+  background: rgba(104, 13, 13, 0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  padding: 8px 14px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 14px;
+}
+
+button,
+.button-link {
+  padding: 12px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #5c9fbe, #68939e);
+  color: white;
+  transition: 0.2s ease;
+  box-shadow: 0 8px 20px rgba(82, 74, 183, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  min-height: 47px;
+}
+
+button:hover,
+.button-link:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+button:disabled {
+  background: #555;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+  filter: none;
+}
+
+.danger {
+  background: linear-gradient(135deg, #194064, #436e81);
+  box-shadow: 0 8px 20px rgba(217, 71, 71, 0.22);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.list-box {
+  max-height: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+  background: rgba(37, 23, 23, 0);
+  border-radius: 18px;
+  padding: 10px;
+  padding-right: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.list-item {
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  border-radius: 16px;
+  background: rgba(36, 33, 33, 0.06);
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-left: 5px solid transparent;
+}
+
+.list-item:hover {
+  background: rgba(0, 0, 0, 0.11);
+}
+
+.list-item small {
+  display: block;
+  opacity: 0.78;
+  margin-top: 4px;
+}
+
+.empty {
+  opacity: 0.7;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.mortal-border { border-left-color: #9ea7b8; }
+.blessed-border { border-left-color: #c99ccf; }
+.astral-border { border-left-color: #5dade2; }
+.ascended-border { border-left-color: #af7ac5; }
+.mythic-border { border-left-color: #f5b041; }
+.divine-border { border-left-color: #a22d7b; }
+.ethereal-border { border-left-color: #fd8eb3; }
+.celestial-border { border-left-color: #6078ff; }
+.transcendant-border { border-left-color: #00415f; }
+.primordial-border { border-left-color: #4d008b; }
+.cosmic-border { border-left-color: #0e0158; }
+.eclipse-border { border-left-color: #230031; }
+
+.screen-flash {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 999;
+}
+
+.screen-flash.active-divine {
+  background: rgba(255, 215, 120, 0.22);
+  animation: flashIn 0.5s ease;
+}
+
+.screen-flash.active-ethereal,
+.screen-flash.active-celestial {
+  background: rgba(120, 180, 255, 0.2);
+  animation: flashIn 0.6s ease;
+}
+
+.screen-flash.active-transcendant,
+.screen-flash.active-primordial,
+.screen-flash.active-cosmic {
+  background: rgba(180, 120, 255, 0.22);
+  animation: flashIn 0.7s ease;
+}
+
+.screen-flash.active-eclipse {
+  background: radial-gradient(circle, rgba(120, 0, 180, 0.22) 0%, rgba(0, 0, 0, 0.75) 75%);
+  animation: eclipseFlash 1s ease;
+}
+
+.gallery-card.owned {
+  box-shadow: 0 0 12px gold;
+  transform: scale(1.02);
+}
+
+.gallery-status {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.shake-light {
+  animation: shakeLight 0.35s ease;
+}
+
+.shake-heavy {
+  animation: shakeHeavy 0.65s ease;
+}
+
+@keyframes shakeLight {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+@keyframes shakeHeavy {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  10% { transform: translateX(-8px) translateY(2px); }
+  20% { transform: translateX(8px) translateY(-2px); }
+  30% { transform: translateX(-6px) translateY(3px); }
+  40% { transform: translateX(6px) translateY(-3px); }
+  50% { transform: translateX(-5px) translateY(2px); }
+  60% { transform: translateX(5px) translateY(-2px); }
+  70% { transform: translateX(-4px) translateY(2px); }
+  80% { transform: translateX(4px) translateY(-2px); }
+  90% { transform: translateX(-2px) translateY(1px); }
+}
+
+@keyframes flashIn {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes eclipseFlash {
+  0% { opacity: 0; transform: scale(1.08); }
+  20% { opacity: 1; }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+.rarity-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: 1000;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 0 18px rgba(255,255,255,0.35);
+}
+
+.rarity-overlay.show {
+  animation: overlayReveal 1s ease forwards;
+}
+
+.rarity-overlay span {
+  padding: 18px 28px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.18);
+  backdrop-filter: blur(6px);
+  font-size: 42px;
+}
+
+.rarity-overlay.ascended span {
+  color: #af7ac5;
+  background: rgba(105, 102, 109, 0.5);
+  box-shadow: 0 0 26px rgba(0, 0, 0, 0.11);
+}
+
+.rarity-overlay.mythic span {
+  color: #ffc76a;
+  background: rgba(245, 176, 65, 0.14);
+  box-shadow: 0 0 26px rgba(245, 176, 65, 0.22);
+}
+
+.rarity-overlay.divine span {
+  color: #a22d7b;
+  background: rgba(119, 109, 115, 0.12);
+  box-shadow: 0 0 30px rgba(177, 112, 152, 0.24);
+}
+
+.rarity-overlay.ethereal span {
+  color: #fd8eb3;
+  background: rgba(161, 98, 129, 0.12);
+  box-shadow: 0 0 30px rgba(239, 124, 124, 0.24);
+}
+
+.rarity-overlay.celestial span {
+  color: #8eb6ff;
+  background: rgba(110, 125, 213, 0.12);
+  box-shadow: 0 0 30px rgba(96, 120, 255, 0.24);
+}
+
+.rarity-overlay.transcendant span {
+  color: #00415f;
+  background: rgba(182, 185, 204, 0.212);
+  box-shadow: 0 0 30px rgba(96, 120, 255, 0.24);
+}
+
+.rarity-overlay.primordial span {
+  color: #4d008b;
+  background: rgba(150, 108, 183, 0.12);
+  box-shadow: 0 0 30px rgba(77, 20, 131, 0.24);
+}
+
+.rarity-overlay.cosmic span {
+  color: #0e0158;
+  background: rgba(67, 144, 140, 0.14);
+  box-shadow: 0 0 34px rgba(36, 139, 145, 0.26);
+}
+
+.rarity-overlay.eclipse span {
+  color: #230031;
+  background: rgba(35, 0, 49, 0.35);
+  box-shadow: 0 0 38px rgba(35, 0, 49, 0.4);
+}
+
+.collection-shop-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.gallery-panel,
+.potion-panel {
+  min-height: 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.gallery-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-2px);
+}
+
+.gallery-card.locked {
+  opacity: 0.45;
+  filter: grayscale(1);
+  cursor: default;
+}
+
+.gallery-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.gallery-rarity {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.gallery-odds {
+  font-size: 0.78rem;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.potion-buttons,
+.shop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.potion-panel button,
+.shop-btn {
+  width: 100%;
+}
+
+.shop-heading {
+  margin-top: 18px;
+}
+
+.quest-toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background: rgba(20, 20, 30, 0.92);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(-14px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.quest-toast.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@keyframes overlayReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.75);
+    filter: blur(10px);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.08);
+    filter: blur(0);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+}
+
+.card-shell.pulse-rare {
+  animation: cardPulse 0.8s ease;
+}
+
+@keyframes cardPulse {
+  0% {
+    transform: scale(0.92);
+    filter: brightness(0.85);
+  }
+  45% {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collection-shop-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .card-shell {
+    width: 100%;
+    max-width: 320px;
+    height: 440px;
+    border-radius: 32px;
+  }
+
+  .image-box,
+  #imageBox,
+  .image-box img,
+  .image-box video,
+  #imageBox img,
+  #imageBox video {
+    border-radius: 24px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    max-height: 350px;
+  }
+
+  .list-box {
+    max-height: 180px;
+  }
+}

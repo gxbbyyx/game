@@ -1,0 +1,344 @@
+[
+{"name":"Fleurdelys","odds":900000,"image":"fleurdelys.jpg"},
+{"name":"Fleurdelys","odds":45938,"image":"fleurdelys2.jpg"},
+{"name":"Fleurdelys","odds":67690,"image":"fleurdelys3.jpg"},
+{"name":"Fleurdelys","odds":98988,"image":"fleurdelys4.jpg"},
+{"name":"Fleurdelys","odds":170945,"image":"fleurdelys5.jpg"},
+{"name":"Fleurdelys","odds":800000,"image":"fleurdelys6.jpg"},
+{"name":"Fleurdelys","odds":342456,"image":"fleurdelys7.jpg"},
+
+{"name":"Carlotta","odds":676000,"image":"carlotta.jpg"},
+{"name":"Carlotta","odds":8888,"image":"carlotta2.jpg"},
+{"name":"Wedding Carlotta","odds":100000,"image":"carlotta3.jpg"},
+{"name":"Carlotta","odds":238198,"image":"carlotta4.jpg"},
+{"name":"Carlotta","odds":454398,"image":"carlotta5.jpg"},
+{"name":"Carlotta","odds":76555,"image":"carlotta6.jpg"},
+{"name":"Carlotta","odds":76888,"image":"carlotta7.jpg"},
+
+{"name":"Camellya","odds":23255,"image":"camellya.jpg"},
+{"name":"Columbina","odds":56444,"image":"columbina.jpg"},
+{"name":"Arlecchino","odds":31411,"image":"arlecchino.jpg"},
+{"name":"Arlecchino","odds":757655,"image":"arlecchino2.jpg"},
+
+{"name":"Cartethyia","odds":666000,"image":"cartethyia.jpg"},
+{"name":"Cartethyia","odds":5550,"image":"cartethyia2.jpg"},
+{"name":"Cartethyia","odds":877777,"image":"cartethyia3.jpg"},
+
+{"name":"Castorice","odds":3522,"image":"castorice.jpg"},
+{"name":"Castorice","odds":5493,"image":"castorice2.jpg"},
+{"name":"Castorice","odds":56543,"image":"castorice3.jpg"},
+{"name":"Castorice","odds":78755,"image":"castorice4.jpg"},
+{"name":"Castorice","odds":123456,"image":"castorice5.jpg"},
+{"name":"Cerydra","odds":5555,"image":"cerydra.jpg"},
+  
+{"name":"Hatsune Miku","odds":400000,"image":"hatsunemiku.jpg"},
+{"name":"Diluc","odds":23233,"image":"diluc.jpg"},
+{"name":"Lingsha","odds":800,"image":"lingsha.jpg"},
+{"name":"Silverwolf","odds":88888,"image":"silverwolf.jpg"},
+{"name":"Silverwolf","odds":24334,"image":"silverwolf2.jpg"},
+{"name":"Silverwolf","odds":13122,"image":"silverwolf3.jpg"},
+{"name":"Blade","odds":2315,"image":"blade.jpg"},
+{"name":"Blade","odds":111111,"image":"blade2.jpg"},
+
+{"name":"Mydei","odds":500000,"image":"mydei.jpg"},
+{"name":"Mydei","odds":100000,"image":"mydei2.jpg"},
+{"name":"Mydei","odds":70000,"image":"mydei3.jpg"},
+{"name":"Mydei","odds":2342,"image":"mydei4.jpg"},
+
+{"name":"Shenhe","odds":23999,"image":"shenhe.jpg"},
+{"name":"Shenhe","odds":563635,"image":"shenhe2.jpg"},
+{"name":"Shenhe","odds":31133,"image":"shenhe3.jpg"},
+{"name":"Yae Miko","odds":6598,"image":"yaemiko.jpg"},
+{"name":"Ada Wong","odds":145000,"image":"adawong.jpg"},
+{"name":"Frieren","odds":5666,"image":"frieren.jpg"},
+
+{"name":"Elysia","odds":200000,"image":"elysia.jpg"},
+{"name":"Elysia","odds":669900,"image":"elysia2.jpg"},
+
+{"name":"Aemeath","odds":29138,"image":"aemeath.jpg"},
+{"name":"Aemeath","odds":435221,"image":"aemeath2.jpg"},
+{"name":"Aemeath","odds":24298,"image":"aemeath3.jpg"},
+{"name":"Aemeath","odds":65948,"image":"aemeath4.jpg"},
+
+{"name":"Baizhi","odds":3528,"image":"baizhi.jpg"},
+{"name":"Nefer","odds":589000,"image":"nefer.jpg"},
+
+{"name":"Cai Lin","odds":586496,"image":"medusa.jpg"},
+{"name":"Gu Xun Er","odds":333333,"image":"xuner.jpg"},
+{"name":"Gu Xun Er","odds":222222,"image":"xuner2.jpg"},  
+
+{"name":"Wang Lin","odds":424355,"image":"wanglin.jpg"},    
+{"name":"Li Muwan","odds":399287,"image":"limuwan.jpg"},
+{"name":"Li Muwan","odds":324222,"image":"limuwan2.jpg"},
+{"name":"Li Muwan","odds":544444,"image":"limuwan3.jpg"},
+{"name":"Li Muwan","odds":213244,"image":"limuwan4.jpg"},  
+{"name":"Wang Lin and Wan Er","odds":54324,"image":"wanglinandwaner.jpg"},   
+{"name":"Wang Lin and Wan Er","odds":213577,"image":"wanglinandwaner2.jpg"},     
+
+{"name":"Aglaea","odds":679,"image":"aglaea.jpg"},
+{"name":"Anaxa","odds":43778,"image":"anaxa.jpg"},
+{"name":"Anaxa","odds":68878,"image":"anaxa2.jpg"},
+{"name":"Sunday","odds":654,"image":"sunday.jpg"},
+{"name":"Annie Leonhart","odds":785,"image":"annieleonhart.jpg"},
+
+{"name":"The Herta","odds":500000,"image":"herta.jpg"},
+{"name":"The Herta","odds":230000,"image":"herta2.jpg"},
+{"name":"The Herta","odds":324098,"image":"herta3.jpg"},
+{"name":"The Herta","odds":674353,"image":"herta4.jpg"},
+{"name":"The Herta","odds":798976,"image":"herta5.jpg"},
+{"name":"The Herta","odds":767666,"image":"herta6.jpg"},
+{"name":"The Herta","odds":43231,"image":"herta7.jpg"},
+{"name":"The Herta","odds":968799,"image":"herta8.jpg"},
+
+{"name":"Dan Heng","odds":13550,"image":"danheng.jpg"},
+{"name":"Acheron","odds":44444,"image":"acheron.jpg"},
+{"name":"Acheron","odds":34344,"image":"acheron2.jpg"},
+{"name":"Acheron","odds":444444,"image":"acheron3.jpg"},
+{"name":"Acheron","odds":65655,"image":"acheron4.jpg"},
+{"name":"Acheron","odds":12123,"image":"acheron5.jpg"},
+{"name":"The Dahlia","odds":250000,"image":"dahlia.jpg"},
+{"name":"The Dahlia","odds":67658,"image":"dahlia2.jpg"},
+{"name":"Kiana Kaslana","odds":150000,"image":"kiana.jpg"},
+{"name":"Raiden Mei","odds":130000,"image":"raidenmei.jpg"},
+
+{"name":"Raiden Shogun","odds":195000,"image":"raidenshogun.jpg"},
+{"name":"Raiden Shogun","odds":233000,"image":"raidenshogun2.jpg"},
+{"name":"Raiden Shogun","odds":366000,"image":"raidenshogun3.jpg"},
+{"name":"Raiden Shogun","odds":432000,"image":"raidenshogun4.jpg"},
+{"name":"Raiden Shogun","odds":700000,"image":"raidenshogun5.jpg"},
+
+{"name":"Silverwing N:EX Bronya","odds":15623,"image":"bronyazaychik.jpg"},
+
+{"name":"Iono","odds":2522,"image":"iono.jpg"},
+{"name":"Iono","odds":2522,"image":"iono2.jpg"},
+{"name":"Lopunny","odds":468,"image":"lopunny.jpg"},
+{"name":"Buneary","odds":897,"image":"buneary.jpg"},
+{"name":"Hatterene","odds":89,"image":"hatterene.jpg"},
+{"name":"Pombon","odds":500,"image":"pombon.jpg"},
+{"name":"Jirachi","odds":498,"image":"jirachi.jpg"},
+{"name":"Lillie","odds":510,"image":"lillie.jpg"},
+{"name":"Lillie","odds":124,"image":"lillie2.jpg"},
+{"name":"Serena","odds":1000,"image":"serena.jpg"},
+{"name":"Serena","odds":120000,"image":"serena2.jpg"},
+{"name":"Lida","odds":6000,"image":"lida.jpg"},
+{"name":"Cynthia","odds":2000,"image":"cynthia.jpg"},
+{"name":"Nessa","odds":342,"image":"nessa.jpg"},
+{"name":"Nessa","odds":56498,"image":"nessa2.jpg"},
+{"name":"Nessa","odds":6855,"image":"nessa3.jpg"},
+{"name":"Corbeau","odds":2226,"image":"corbeau.jpg"},
+{"name":"Dawn","odds":46,"image":"dawn.jpg"},
+
+{"name":"Neuvillette","odds":65467,"image":"neuvillette.jpg"},
+{"name":"Jing Yuan","odds":23143,"image":"jingyuan.jpg"},
+
+{"name":"Mavuika","odds":9865,"image":"mavuika.jpg"},
+
+{"name":"Robin","odds":63420,"image":"robin.jpg"},
+{"name":"Robin","odds":244300,"image":"robin2.jpg"},
+{"name":"Robin","odds":1238,"image":"robin3.jpg"},
+{"name":"Robin","odds":23123,"image":"robin4.jpg"},
+
+{"name":"Cyrene","odds":16000,"image":"cyrene.jpg"},
+{"name":"Cyrene","odds":101000,"image":"cyrene2.jpg"},
+{"name":"Cyrene","odds":544060,"image":"cyrene3.jpg"},
+{"name":"Cyrene","odds":223311,"image":"cyrene4.jpg"},
+{"name":"Cyrene","odds":60599,"image":"cyrene5.jpg"},
+{"name":"Cyrene","odds":12032,"image":"cyrene6.jpg"},
+{"name":"Cyrene","odds":574777,"image":"cyrene7.jpg"},
+
+{"name":"Cipher","odds":78000,"image":"cipher.jpg"},
+{"name":"Fischl","odds":231,"image":"fischl.jpg"},
+{"name":"Aventurine","odds":10000,"image":"aventurine.jpg"},
+{"name":"Aventurine","odds":77765,"image":"aventurine2.jpg"},
+
+{"name":"Changli","odds":2222,"image":"changli.jpg"},
+{"name":"Changli","odds":5530,"image":"changli2.jpg"},
+
+{"name":"Black Swan","odds":27000,"image":"blackswan.jpg"},
+{"name":"Lupa","odds":600,"image":"lupa.jpg"},
+
+{"name":"Kafka","odds":9900,"image":"kafka.jpg"},
+{"name":"Kafka","odds":99400,"image":"kafka2.jpg"},
+{"name":"Kafka","odds":34398,"image":"kafka3.jpg"},
+
+{"name":"Sparxie","odds":23989,"image":"sparxie.jpg"},
+{"name":"Jingliu","odds": 75694,"image":"jingliu.jpg"},
+
+{"name":"Jade","odds":1400,"image":"jade.jpg"},
+{"name":"Jade","odds":6533,"image":"jade2.jpg"},
+
+{"name":"Brant","odds":565,"image":"brant.jpg"},
+{"name":"Skirk","odds":87700,"image":"skirk.jpg"},
+{"name":"Skirk","odds":123421,"image":"skirk2.jpg"},
+{"name":"Alice","odds":156000,"image":"alice.jpg"},
+{"name":"Alice","odds":475777,"image":"alice2.jpg"},
+{"name":"Alice","odds":423522,"image":"alice3.jpg"},
+{"name":"Alice","odds":685555,"image":"alice4.jpg"},
+{"name":"Alice","odds":799999,"image":"alice5.jpg"},
+
+{"name":"Dainsleif","odds":5654,"image":"dainsleif.jpg"},
+{"name":"Dainsleif","odds":7889,"image":"dainsleif2.jpg"},
+{"name":"Nilou","odds":3456,"image":"nilou2.jpg"},
+{"name":"Tribios","odds":355677,"image":"tribios.jpg"},
+{"name":"Tribios","odds":511000,"image":"tribios2.jpg"},
+{"name":"Raven","odds":169000,"image":"raven.jpg"},
+{"name":"Nightwing","odds":202000,"image":"nightwing.jpg"},
+{"name":"Nightwing","odds":606060,"image":"nightwing2.jpg"},
+
+{"name":"Ruan Mei","odds":239180,"image":"ruanmei.jpg"},
+{"name":"Ruan Mei","odds":12355,"image":"ruanmei2.jpg"},
+{"name":"Ruan Mei","odds":983,"image":"ruanmei3.jpg"},
+{"name":"Ruan Mei","odds":44539,"image":"ruanmei4.jpg"},
+{"name":"Ruan Mei","odds":78756,"image":"ruanmei5.jpg"},
+
+{"name":"Phrolova","odds":99000,"image":"phrolova.jpg"},
+
+{"name":"Lu Jinghe","odds":99999,"image":"marius.jpg"},
+{"name":"Lu Jinghe","odds":111111,"image":"marius2.jpg"},
+{"name":"Lu Jinghe","odds":54444,"image":"marius3.jpg"},
+
+{"name":"Kaeya","odds":53556,"image":"kaeya.jpg"},
+{"name":"Kaeya","odds":665646,"image":"kaeya2.jpg"},
+{"name":"Kaeya","odds":96999,"image":"kaeya3.jpg"},
+
+{"name":"Xiao","odds":45428,"image":"xiao.jpg"},
+{"name":"Xianyun","odds":2444,"image":"xianyun.jpg"},
+
+{"name":"Tartaglia","odds":213,"image":"tartaglia.jpg"},
+{"name":"Tartaglia","odds":67565,"image":"tartaglia2.jpg"},
+{"name":"Tartaglia","odds":7987,"image":"tartaglia3.jpg"},
+
+{"name":"Capitano","odds":644,"image":"capitano.jpg"},
+
+{"name":"Wedding Yae Miko & Raiden Shogun","odds":97500,"image":"wedyaeraiden.jpg"},
+
+{"name":"Augusta","odds":95000,"image":"augusta.jpg"},
+{"name":"Augusta","odds":212000,"image":"augusta.jpg"},
+
+{"name":"Iuno","odds":80000,"image":"iuno.jpg"},
+{"name":"Iuno","odds":4633,"image":"iuno2.jpg"},
+{"name":"Iuno","odds":9648,"image":"iuno3.jpg"},
+{"name":"Iuno","odds":650000,"image":"iuno4.jpg"},
+
+{"name":"Zani","odds":1248,"image":"zani.jpg"},
+
+{"name":"Furina","odds":40000,"image":"furina.jpg"},
+{"name":"Furina","odds":12348,"image":"furina2.jpg"},
+
+{"name":"Fugue","odds":23131,"image":"fugue.jpg"},
+{"name":"Fugue","odds":453566,"image":"fugue2.jpg"},
+{"name":"Fugue","odds":68788,"image":"fugue3.jpg"},
+{"name":"Fugue","odds":11000,"image":"fugue4.jpg"},
+
+{"name":"Phainon","odds":67474,"image":"phainon2.jpg"},
+{"name":"Phainon","odds":5321,"image":"phainon2.jpg"},
+{"name":"Phainon","odds":7777,"image":"phainon3.jpg"},
+{"name":"Sage","odds":42542,"image":"sage.jpg"},
+{"name":"Sage","odds":12341,"image":"sage2.jpg"},
+{"name":"Reyna","odds":57687,"image":"reyna.jpg"},
+{"name":"Male Jett","odds":76989,"image":"malejett.jpg"},
+{"name":"Jett","odds":86588,"image":"jett.jpg"},
+{"name":"Chamber","odds":50000,"image":"chamber.jpg"},
+{"name":"Rosalina","odds":42677,"image":"rosalina.jpg"},
+{"name":"Rosalina","odds":57788,"image":"rosalina2.jpg"},
+{"name":"Rosalina","odds":42321,"image":"rosalina3.jpg"},
+{"name":"Princess Peach","odds":53332,"image":"peach.jpg"},
+
+{"name":"Varka","odds":32577,"image":"varka.jpg"},
+{"name":"Varka","odds":600000,"image":"varka2.jpg"},
+{"name":"Kokomi","odds":32145,"image":"kokomi.jpg"},
+
+{"name":"Dagger","odds":22433,"image":"dagger.jpg"},
+{"name":"Jeff the Landshark","odds":200,"image":"jeff.jpg"},
+
+{"name":"Ahri","odds":65366,"image":"ahri.jpg"},
+{"name":"Ahri","odds":31345,"image":"ahri2.jpg"},
+{"name":"Ahri","odds":1001,"image":"ahri3.jpg"},
+{"name":"Snow Moon Ahri","odds":102011,"image":"snowmoonahri.jpg"},
+
+{"name":"Yelan","odds":30000,"image":"yelan.jpg"},
+{"name":"Wedding Yelan","odds":34266,"image":"yelan2.jpg"},
+{"name":"Yoimiya","odds":34289,"image":"yoimiya.jpg"},
+{"name":"Clorinde","odds":24000,"image":"clorinde.jpg"},
+{"name":"Lauma","odds":15000,"image":"lauma.jpg"},
+
+{"name":"Evernight","odds":43756,"image":"evernight.jpg"},
+{"name":"Evernight","odds":15623,"image":"evernight2.jpg"},
+{"name":"Evernight","odds":222000,"image":"evernight3.jpg"},
+{"name":"Evernight","odds":278316,"image":"evernight4.jpg"},
+
+{"name":"Hyacine","odds":6890,"image":"hyacine.jpg"},
+
+{"name":"Black Cat","odds":12000,"image":"blackcat.jpg"},
+{"name":"Black Cat","odds":777777,"image":"blackcat2.jpg"},
+
+{"name":"Emma Frost","odds":850000,"image":"emmafrost.jpg"},
+
+{"name":"Galbrena","odds":2100,"image":"galbrena.jpg"},
+{"name":"Galbrena","odds":664989,"image":"galbrena2.jpg"},
+{"name":"Galbrena","odds":69045,"image":"galbrena3.jpg"},
+
+{"name":"Keqing","odds":4500,"image":"keqing.jpg"},
+
+{"name":"Flora","odds":1000,"image":"flora.jpg"},
+{"name":"Flora","odds":450943,"image":"flora2.jpg"},
+
+{"name":"Bloom","odds":1000,"image":"bloom.png"},
+{"name":"Bloom","odds":230920,"image":"bloom.jpg"},
+
+{"name":"Musa","odds":50,"image":"musa.jpg"},
+{"name":"Musa","odds":88888,"image":"musa2.jpg"},
+
+{"name":"Stella","odds":22222,"image":"stella.jpg"},
+{"name":"Jinhsi","odds":555,"image":"jinhsi.jpg"},
+{"name":"Jean","odds":120,"image":"jean.jpg"},
+{"name":"Eula","odds":843,"image":"eula.jpg"},
+{"name":"Nilou","odds":9007,"image":"nilou.jpg"},
+{"name":"Ningguang","odds":340,"image":"ningguang.jpg"},
+
+{"name":"Wigglytuff, Jigglypuff, and Igglybuff","odds":33,"image":"jigglypuff.jpg"},
+
+{"name":"Immortalised Ahri","odds":600101,"image":"immortalisedahri.jpg"},
+{"name":"Spirit Blossom Ahri","odds":120232,"image":"spiritblossomahri.jpg"},
+{"name":"Spirit Blossom Akali","odds":222000,"image":"spiritblossomakali.jpg"},
+{"name":"Prestige Coven Akali","odds":56000,"image":"prestigecovenakali.jpg"},
+{"name":"Prestige Commander Caitlyn","odds":43288,"image":"prestigecommandercaitlyn.jpg"},
+{"name":"Star Nemesis Morgana","odds":11000,"image":"starnemesismorgana.jpg"},
+{"name":"Dawnbringer Morgana","odds":333000,"image":"dawnbringermorgana.jpg"},
+
+{"name":"Shorekeeper","odds":150,"image":"shorekeeper.jpg"},
+{"name":"Shorekeeper","odds":880890,"image":"shorekeeper2.jpg"},
+
+{"name":"Cantarella","odds":80,"image":"cantarella.jpg"},
+{"name":"Cantarella","odds":900,"image":"cantarella2.jpg"},
+{"name":"Cantarella","odds":5555,"image":"cantarella3.jpg"},
+{"name":"Cantarella","odds":87575,"image":"cantarella4.jpg"},
+
+{"name":"Feixiao","odds":4583,"image":"feixiao.jpg"},
+{"name":"Luna Snow","odds":15555,"image":"lunasnow.jpg"},
+
+{"name":"Lynae","odds":55,"image":"lynae.jpg"},
+{"name":"Lynae","odds":790,"image":"lynae2.jpg"},
+{"name":"Lynae","odds":3300,"image":"lynae3.jpg"},
+{"name":"Lynae","odds":65989,"image":"lynae4.jpg"},
+
+{"name":"Zibai","odds":20,"image":"zibai.jpg"},
+{"name":"Zibai","odds":67,"image":"zibai2.jpg"},
+{"name":"Zibai","odds":222222,"image":"zibai3.jpg"},
+{"name":"Zibai","odds":63982,"image":"zibai4.jpg"},
+
+{"name":"Nicole","odds":45938,"image":"nicole.jpg"},
+{"name":"Rogue","odds":10,"image":"rogue.jpg"},
+
+{"name":"Hysilens","odds":5,"image":"hysilens.jpg"},
+{"name":"Hysilens","odds":69,"image":"hysilens2.jpg"},
+{"name":"Hysilens","odds":16699,"image":"hysilens3.jpg"},
+{"name":"Hysilens","odds":33456,"image":"hysilens4.jpg"},
+
+{"name":"Pompompurin","odds":15,"image":"pompompurin.jpg"},
+{"name":"Usagi","odds":2,"image":"usagi.jpg"},
+{"name":"Pochaco","odds":6,"image":"pochaco.jpg"},
+{"name":"Marumofubiyori","odds":3,"image":"marumofubiyori.jpg"},
+{"name":"Little Twin Stars","odds":4,"image":"littletwinstars.jpg"},
+{"name":"Cinnamoroll","odds":1,"image":"cinnamoroll2.jpg"}
+]

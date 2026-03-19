@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sound Test</h2>
+
+<button onclick="test('mythic')">Mythic</button>
+<button onclick="test('divine')">Divine</button>
+<button onclick="test('ethereal')">Ethereal</button>
+<button onclick="test('celestial')">Celestial</button>
+<button onclick="test('transcendant')">Transcendant</button>
+<button onclick="test('primordial')">Primordial</button>
+<button onclick="test('cosmic')">Cosmic</button>
+<button onclick="test('eclipse')">Eclipse</button>
+
+<script>
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+function playTone(freq, duration, type, volume){
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+
+  osc.type = type;
+  osc.frequency.value = freq;
+
+  gain.gain.value = volume;
+
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+
+  osc.start();
+  osc.stop(audioCtx.currentTime + duration);
+}
+
+function test(rarity){
+
+  if (rarity === "mythic") {
+    playTone(523,0.12,"sine",0.035);
+    setTimeout(()=>playTone(659,0.12,"sine",0.032),100);
+    setTimeout(()=>playTone(784,0.18,"sine",0.03),220);
+
+  } else if (rarity === "divine") {
+    playTone(587,0.12,"sine",0.04);
+    setTimeout(()=>playTone(740,0.12,"sine",0.038),100);
+    setTimeout(()=>playTone(880,0.2,"sine",0.035),220);
+
+  } else if (rarity === "ethereal") {
+    playTone(659,0.12,"triangle",0.04);
+    setTimeout(()=>playTone(831,0.12,"triangle",0.038),90);
+    setTimeout(()=>playTone(988,0.2,"triangle",0.034),200);
+
+  } else if (rarity === "celestial") {
+    playTone(698,0.12,"triangle",0.045);
+    setTimeout(()=>playTone(880,0.14,"triangle",0.04),90);
+    setTimeout(()=>playTone(1047,0.22,"triangle",0.036),200);
+
+  } else if (rarity === "transcendant") {
+    playTone(784,0.14,"sine",0.045);
+    setTimeout(()=>playTone(988,0.14,"sine",0.042),90);
+    setTimeout(()=>playTone(1175,0.24,"sine",0.038),210);
+
+  } else if (rarity === "primordial") {
+    playTone(880,0.14,"sawtooth",0.045);
+    setTimeout(()=>playTone(1109,0.16,"sawtooth",0.042),100);
+    setTimeout(()=>playTone(1319,0.26,"sawtooth",0.038),220);
+
+  } else if (rarity === "cosmic") {
+    playTone(988,0.16,"sawtooth",0.05);
+    setTimeout(()=>playTone(1245,0.18,"sawtooth",0.045),100);
+    setTimeout(()=>playTone(1480,0.28,"sawtooth",0.04),220);
+
+  } else if (rarity === "eclipse") {
+    playTone(1047,0.18,"square",0.05);
+    setTimeout(()=>playTone(1319,0.2,"square",0.048),110);
+    setTimeout(()=>playTone(1568,0.32,"square",0.045),240);
+  }
+
+}
+</script>
+
+</body>
+</html>

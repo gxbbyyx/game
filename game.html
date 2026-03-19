@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RNG Web Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>RNG</h1>
+
+      <div id="rarityBadge" class="rarity-badge">No card yet</div>
+
+      <div id="cardShell" class="card-shell rarity-mortal">
+        <div class="image-box" id="imageBox">
+          <span id="imagePlaceholder">Roll to see a character</span>
+          <div id="sparkle" class="sparkle"></div>
+        </div>
+      </div>
+
+      <div class="info">
+        <p id="resultLabel">Press ROLL to begin</p>
+        <p id="counterLabel">Rolls: 0</p>
+
+        <div class="substats">
+          <div class="stat-pill" id="luckLabel">Luck: 1x</div>
+          <div class="stat-pill" id="bestLabel">Best: None</div>
+          <div class="stat-pill" id="keptCountLabel">Kept: 0</div>
+          <div class="stat-pill" id="goldLabel">Gold: 0</div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="rollButton">ROLL</button>
+        <button id="startAutoButton">Start Auto Roll</button>
+        <button id="stopAutoButton">Stop Auto Roll</button>
+        <button id="keepButton" disabled>KEEP CARD</button>
+        <button id="increaseLuckButton">Increase Luck</button>
+        <button id="resetLuckButton">Reset Luck</button>
+        <button id="toggleSoundButton">Sound: ON</button>
+        <a href="collection.html" id="myCollectionButton" class="button-link">My Collection</a>
+        <button id="resetSaveButton" class="danger">Reset Save</button>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="panel">
+        <h2>Roll History</h2>
+        <div class="list-box" id="rollHistoryList">
+          <div class="empty">No rolls yet.</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Kept Cards</h2>
+        <div class="list-box" id="keptCardsList">
+          <div class="empty">No kept cards yet.</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Quests</h2>
+        <div id="questList" class="list-box">
+          <div class="empty">No quests yet.</div>
+        </div>
+      </div>
+
+      <div class="collection-shop-row">
+        <div class="panel gallery-panel">
+          <h2>Card Gallery</h2>
+          <p id="galleryProgressLabel">Discovered: 0 / 0</p>
+          <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+
+        <div class="panel potion-panel">
+          <h2>Potions</h2>
+          <div class="potion-buttons">
+            <button id="smallPotionButton">Blessed Fortune Draught</button>
+            <button id="mediumPotionButton">Divine Fortune Elixir</button>
+            <button id="bigPotionButton">Celestial Fate Tonic</button>
+            <button id="speedPotionButton">Quicksilver Potion</button>
+          </div>
+
+          <h2 class="shop-heading">Shop</h2>
+          <div class="shop-list">
+            <button class="shop-btn" id="shopSmallPotionButton">Buy Blessed Fortune Draught (250 Gold)</button>
+            <button class="shop-btn" id="shopMediumPotionButton">Buy Divine Fortune Elixir (900 Gold)</button>
+            <button class="shop-btn" id="shopBigPotionButton">Buy Celestial Fate Tonic (2000 Gold)</button>
+            <button class="shop-btn" id="buyLuckUpgradeButton">Buy Permanent +3 Base Luck (1500 Gold)</button>
+            <button class="shop-btn" id="shopSpeedPotionButton">Buy Quicksilver Potion (800 Gold)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="screenFlash" class="screen-flash"></div>
+  <div id="rarityOverlay" class="rarity-overlay"></div>
+  <div id="questToast" class="quest-toast">Quest Complete!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
