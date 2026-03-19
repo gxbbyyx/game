@@ -18,6 +18,7 @@ let rollSpeedMultiplier = 1;
 let speedPotionEndTime = 0;
 let speedPotionTimerInterval = null;
 let completedQuestIds = [];
+let claimedQuestIds = [];
 let questToastTimeout = null;
 
 const SAVE_KEY = "rng_web_game_save_v4";
@@ -51,44 +52,91 @@ const questToast = document.getElementById("questToast");
 let audioContext = null;
 let holdLuckInterval = null;
 
-let quests = [
+
+
+const QUEST_POOL = [
   {
-    id: "roll_10",
-    title: "Roll 10 times",
     type: "roll",
+    title: "Roll 10 times",
     goal: 10,
-    reward: { gold: 100 },
-    claimed: false
+    reward: { gold: 100 }
   },
   {
-    id: "keep_2",
-    title: "Keep 2 cards",
+    type: "roll",
+    title: "Roll 25 times",
+    goal: 25,
+    reward: { gold: 250 }
+  },
+  {
     type: "keep",
+    title: "Keep 2 cards",
     goal: 2,
-    reward: { gold: 150 },
-    claimed: false
+    reward: { gold: 150 }
   },
   {
-    id: "discover_5",
-    title: "Discover 5 cards",
-    type: "discover",
+    type: "keep",
+    title: "Keep 5 cards",
     goal: 5,
-    reward: { luck: 1 },
-    claimed: false
+    reward: { gold: 350 }
+  },
+  {
+    type: "discover",
+    title: "Discover 3 cards",
+    goal: 3,
+    reward: { luck: 1 }
+  },
+  {
+    type: "discover",
+    title: "Discover 5 cards",
+    goal: 5,
+    reward: { gold: 200 }
   }
 ];
 
+let quests = [];
+
 const questList = document.getElementById("questList");
 
-function getQuestProgress(quest) {
-  if (quest.type === "roll") return rollCount;
-  if (quest.type === "keep") return keptCards.length;
-  if (quest.type === "discover") return discoveredCards.length;
+function getCurrentQuestValue(type) {
+  if (type === "roll") return rollCount;
+  if (type === "keep") return keptCards.length;
+  if (type === "discover") return discoveredCards.length;
   return 0;
 }
 
-function claimQuest(quest) {
-  if (quest.claimed) return;
+function generateQuest() {
+  const template = QUEST_POOL[Math.floor(Math.random() * QUEST_POOL.length)];
+
+  return {
+    id: `${template.type}_${template.goal}_${Date.now()}_${Math.floor(Math.random() * 100000)}`,
+    type: template.type,
+    title: template.title,
+    goal: template.goal,
+    startValue: getCurrentQuestValue(template.type),
+    reward: { ...template.reward },
+    claimed: false
+  };
+}
+
+function ensureQuestSlots() {
+  while (quests.length < 3) {
+    quests.push(generateQuest());
+  }
+}
+
+function getQuestProgress(quest) {
+  const currentValue = getCurrentQuestValue(quest.type);
+  return Math.max(0, currentValue - (quest.startValue || 0));
+}
+
+function claimQuest(questId) {
+  const index = quests.findIndex((quest) => quest.id === questId);
+  if (index === -1) return;
+
+  const quest = quests[index];
+  const progress = getQuestProgress(quest);
+
+  if (quest.claimed || progress < quest.goal) return;
 
   if (quest.reward.gold) {
     gold += quest.reward.gold;
@@ -99,17 +147,23 @@ function claimQuest(quest) {
   }
 
   quest.claimed = true;
+  completedQuestIds = completedQuestIds.filter((id) => id !== quest.id);
+  claimedQuestIds.push(quest.id);
+
+  const oldTitle = quest.title;
+  quests[index] = generateQuest();
 
   updateStats();
   updateQuests();
   saveGame();
-
-  resultLabel.textContent = `Claimed reward for: ${quest.title}`;
+  showQuestToast(`Reward Claimed: ${oldTitle}`);
+  resultLabel.textContent = `Claimed reward for: ${oldTitle}`;
 }
 
 function updateQuests() {
   if (!questList) return;
 
+  ensureQuestSlots();
   questList.innerHTML = "";
 
   quests.forEach((quest) => {
@@ -123,18 +177,14 @@ function updateQuests() {
 
     div.innerHTML = `
       <strong>${quest.title}</strong>
-      <small>${progress} / ${quest.goal}</small>
+      <small>${Math.min(progress, quest.goal)} / ${quest.goal}</small>
     `;
 
     if (completed && !quest.claimed) {
       const btn = document.createElement("button");
       btn.textContent = "Claim";
-      btn.addEventListener("click", () => claimQuest(quest));
+      btn.addEventListener("click", () => claimQuest(quest.id));
       div.appendChild(btn);
-    } else if (quest.claimed) {
-      const done = document.createElement("span");
-      done.textContent = "✔ Claimed";
-      div.appendChild(done);
     }
 
     questList.appendChild(div);
@@ -813,7 +863,9 @@ function saveGame() {
     gold,
     rollSpeedMultiplier,
     speedPotionEndTime,
-    completedQuestIds
+    quests,
+    completedQuestIds,
+    claimedQuestIds
   };
 
   localStorage.setItem(SAVE_KEY, JSON.stringify(data));
@@ -838,7 +890,11 @@ function loadGame() {
     gold = Number.isFinite(data.gold) ? data.gold : 0;
     rollSpeedMultiplier = Number.isFinite(data.rollSpeedMultiplier) ? data.rollSpeedMultiplier : 1;
     speedPotionEndTime = Number.isFinite(data.speedPotionEndTime) ? data.speedPotionEndTime : 0;
+    quests = Array.isArray(data.quests) ? data.quests : [];
     completedQuestIds = Array.isArray(data.completedQuestIds) ? data.completedQuestIds : [];
+    claimedQuestIds = Array.isArray(data.claimedQuestIds) ? data.claimedQuestIds : [];
+
+    ensureQuestSlots();
 
     clearExpiredSpeedPotion();
     if (getSpeedSecondsLeft() > 0) {
@@ -886,7 +942,9 @@ function resetSave() {
   gold = 0;
   rollSpeedMultiplier = 1;
   speedPotionEndTime = 0;
+  quests = [];
   completedQuestIds = [];
+  claimedQuestIds = [];
 
   if (potionTimerInterval) {
     clearInterval(potionTimerInterval);
@@ -903,10 +961,12 @@ function resetSave() {
 
   keepButton.disabled = true;
 
+  ensureQuestSlots();
   updateRollHistory();
   updateKeptCards();
   updateGallery();
   updateStats();
+  updateQuests();
   saveGame();
 }
 
@@ -1290,6 +1350,7 @@ async function startGame() {
   try {
     await loadCharacters();
     loadGame();
+    ensureQuestSlots();
     updateGallery();
     updateStats();
     updateQuests();
