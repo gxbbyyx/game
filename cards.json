@@ -22,7 +22,10 @@
 {"name":"Arlecchino","odds":246788,"image":"arlecchino3.jpg"},
 {"name":"Arlecchino","odds":563096,"image":"arlecchino4.jpg"},
 {"name":"Arlecchino","odds":21398,"image":"arlecchino5.jpg"},
-{"name":"Arlecchino","odds":343299,"image":"arlecchino6.jpg"},
+{"name":"Arlecchino","odds":463632,"image":"arlecchino6.jpg"},
+{"name":"Arlecchino","odds":455935,"image":"arlecchino7.jpg"},
+
+{"name":"Firefly","odds":46588,"image":"firely.jpg"},
 
 {"name":"Cartethyia","odds":666000,"image":"cartethyia.jpg"},
 {"name":"Cartethyia","odds":5550,"image":"cartethyia2.jpg"},
@@ -36,6 +39,9 @@
 {"name":"Cerydra","odds":5555,"image":"cerydra.jpg"},
   
 {"name":"Hatsune Miku","odds":400000,"image":"hatsunemiku.jpg"},
+{"name":"Hatsune Miku","odds":213111,"image":"hatsunemiku2.jpg"},
+{"name":"Hatsune Miku","odds":236435,"image":"hatsunemiku3.jpg"},
+{"name":"Hatsune Miku","odds":46422,"image":"hatsunemiku4.jpg"},
 {"name":"Diluc","odds":23233,"image":"diluc.jpg"},
 {"name":"Lingsha","odds":800,"image":"lingsha.jpg"},
 {"name":"Silverwolf","odds":88888,"image":"silverwolf.jpg"},
@@ -63,6 +69,8 @@
 {"name":"Aemeath","odds":435221,"image":"aemeath2.jpg"},
 {"name":"Aemeath","odds":24298,"image":"aemeath3.jpg"},
 {"name":"Aemeath","odds":65948,"image":"aemeath4.jpg"},
+
+{"name":"Roccia","odds":3427,"image":"roccia.jpg"},
 
 {"name":"Baizhi","odds":3528,"image":"baizhi.jpg"},
 {"name":"Nefer","odds":589000,"image":"nefer.jpg"},
@@ -121,6 +129,7 @@
 {"name":"Hatterene","odds":89,"image":"hatterene.jpg"},
 {"name":"Pombon","odds":500,"image":"pombon.jpg"},
 {"name":"Jirachi","odds":498,"image":"jirachi.jpg"},
+{"name":"Victini","odds":661,"image":"victini.jpg"},
 {"name":"Lillie","odds":510,"image":"lillie.jpg"},
 {"name":"Lillie","odds":124,"image":"lillie2.jpg"},
 {"name":"Serena","odds":1000,"image":"serena.jpg"},
@@ -297,10 +306,14 @@
 
 {"name":"Stella","odds":22222,"image":"stella.jpg"},
 {"name":"Jinhsi","odds":555,"image":"jinhsi.jpg"},
+{"name":"Jinhsi","odds":26466,"image":"jinhsi2.jpg"},
 {"name":"Jean","odds":120,"image":"jean.jpg"},
 {"name":"Eula","odds":843,"image":"eula.jpg"},
 {"name":"Nilou","odds":9007,"image":"nilou.jpg"},
 {"name":"Ningguang","odds":340,"image":"ningguang.jpg"},
+{"name":"March 7th","odds":6849,"image":"march7th.jpg"},
+
+{"name":"Chiaki Nanami","odds":6902,"image":"chiakinanami.jpg"},
 
 {"name":"Wigglytuff, Jigglypuff, and Igglybuff","odds":33,"image":"jigglypuff.jpg"},
 
