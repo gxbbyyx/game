@@ -19,6 +19,10 @@
 {"name":"Columbina","odds":56444,"image":"columbina.jpg"},
 {"name":"Arlecchino","odds":31411,"image":"arlecchino.jpg"},
 {"name":"Arlecchino","odds":757655,"image":"arlecchino2.jpg"},
+{"name":"Arlecchino","odds":246788,"image":"arlecchino3.jpg"},
+{"name":"Arlecchino","odds":563096,"image":"arlecchino4.jpg"},
+{"name":"Arlecchino","odds":21398,"image":"arlecchino5.jpg"},
+{"name":"Arlecchino","odds":343299,"image":"arlecchino6.jpg"},
 
 {"name":"Cartethyia","odds":666000,"image":"cartethyia.jpg"},
 {"name":"Cartethyia","odds":5550,"image":"cartethyia2.jpg"},
@@ -96,6 +100,7 @@
 {"name":"Acheron","odds":444444,"image":"acheron3.jpg"},
 {"name":"Acheron","odds":65655,"image":"acheron4.jpg"},
 {"name":"Acheron","odds":12123,"image":"acheron5.jpg"},
+{"name":"Acheron","odds":330933,"image":"acheron6.jpg"},
 {"name":"The Dahlia","odds":250000,"image":"dahlia.jpg"},
 {"name":"The Dahlia","odds":67658,"image":"dahlia2.jpg"},
 {"name":"Kiana Kaslana","odds":150000,"image":"kiana.jpg"},
@@ -162,6 +167,7 @@
 {"name":"Kafka","odds":34398,"image":"kafka3.jpg"},
 
 {"name":"Sparxie","odds":23989,"image":"sparxie.jpg"},
+{"name":"Sparxie","odds":34525,"image":"sparxie2.jpg"},
 {"name":"Jingliu","odds": 75694,"image":"jingliu.jpg"},
 
 {"name":"Jade","odds":1400,"image":"jade.jpg"},
