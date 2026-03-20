@@ -238,6 +238,10 @@
 
 {"name":"Zani","odds":1248,"image":"zani.jpg"},
 
+{"name":"Nanami Kento","odds":124238,"image":"nanamikento.jpg"},
+{"name":"Nanami Kento","odds":436775,"image":"nanamikento2.jpg"},
+{"name":"Navia","odds":98540,"image":"navia.jpg"},
+
 {"name":"Furina","odds":40000,"image":"furina.jpg"},
 {"name":"Furina","odds":12348,"image":"furina2.jpg"},
 
@@ -252,6 +256,7 @@
 {"name":"Sage","odds":42542,"image":"sage.jpg"},
 {"name":"Sage","odds":12341,"image":"sage2.jpg"},
 {"name":"Reyna","odds":57687,"image":"reyna.jpg"},
+{"name":"Reyna","odds":569538,"image":"reyna2.jpg"},
 {"name":"Male Jett","odds":76989,"image":"malejett.jpg"},
 {"name":"Jett","odds":86588,"image":"jett.jpg"},
 {"name":"Chamber","odds":50000,"image":"chamber.jpg"},
