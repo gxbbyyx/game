@@ -749,6 +749,8 @@ async function doRoll() {
 
   const rolled = rollCharacter(finalLuck);
   const reward = getGoldReward(rolled);
+  const alreadyOwned = ownsCard(rolled);
+  const rolledRarity = getRarity(rolled);
 
   currentRoll = rolled;
   rollCount++;
@@ -766,24 +768,26 @@ async function doRoll() {
 
   resultLabel.textContent += ` • +${reward} Gold`;
 
-  if (ownsCard(rolled)) {
+  if (alreadyOwned) {
     resultLabel.textContent += " • Already owned";
   }
 
   playRevealSound(rolled);
 
-  keepButton.disabled = ownsCard(rolled);
+  keepButton.disabled = alreadyOwned;
   updateRollHistory();
   updateGallery();
   updateStats();
   saveGame();
   updateQuests();
 
-  const rolledRarity = getRarity(rolled);
-
-  if (autoRolling && isRarityAtOrAbove(rolledRarity, autoStopRarity)) {
+  if (
+    autoRolling &&
+    !alreadyOwned &&
+    isRarityAtOrAbove(rolledRarity, autoStopRarity)
+  ) {
     stopAutoRoll();
-    resultLabel.textContent += ` • Auto-roll stopped at ${capitalize(rolledRarity)}+`;
+    resultLabel.textContent += ` • Auto-roll stopped at new ${capitalize(rolledRarity)}+ card`;
   }
 
   isRolling = false;
