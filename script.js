@@ -52,7 +52,28 @@ const questToast = document.getElementById("questToast");
 let audioContext = null;
 let holdLuckInterval = null;
 
+let autoStopRarity = "mythic";
 
+const RARITY_ORDER = [
+  "mortal",
+  "blessed",
+  "astral",
+  "ascended",
+  "mythic",
+  "divine",
+  "ethereal",
+  "celestial",
+  "transcendant",
+  "primordial",
+  "cosmic",
+  "eclipse"
+];
+
+function isRarityAtOrAbove(rolledRarity, thresholdRarity) {
+  return (
+    RARITY_ORDER.indexOf(rolledRarity) >= RARITY_ORDER.indexOf(thresholdRarity)
+  );
+}
 
 const QUEST_POOL = [
   {
@@ -757,6 +778,13 @@ async function doRoll() {
   updateStats();
   saveGame();
   updateQuests();
+
+  const rolledRarity = getRarity(rolled);
+
+  if (autoRolling && isRarityAtOrAbove(rolledRarity, autoStopRarity)) {
+    stopAutoRoll();
+    resultLabel.textContent += ` • Auto-roll stopped at ${capitalize(rolledRarity)}+`;
+  }
 
   isRolling = false;
 }
