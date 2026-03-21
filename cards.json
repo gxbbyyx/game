@@ -64,6 +64,11 @@
 {"name":"Yae Miko","odds":6598,"image":"yaemiko.jpg"},
 {"name":"Ada Wong","odds":145000,"image":"adawong.jpg"},
 {"name":"Frieren","odds":5666,"image":"frieren.jpg"},
+{"name":"Frieren","odds":127335,"image":"frieren2.jpg"},
+{"name":"Frieren","odds":134887,"image":"frieren3.jpg"},
+{"name":"Frieren and Himmel","odds":263165,"image":"frierenandhimmel.jpg"},
+
+{"name":"Yor Forger","odds":246352,"image":"yorforger.jpg"},
 
 {"name":"Elysia","odds":200000,"image":"elysia.jpg"},
 {"name":"Elysia","odds":669900,"image":"elysia2.jpg"},
@@ -263,6 +268,7 @@
 {"name":"Nanami Kento","odds":124238,"image":"nanamikento.jpg"},
 {"name":"Nanami Kento","odds":436775,"image":"nanamikento2.jpg"},
 {"name":"Navia","odds":98540,"image":"navia.jpg"},
+{"name":"Navia","odds":9010,"image":"navia2.jpg"},
 
 {"name":"Furina","odds":40000,"image":"furina.jpg"},
 {"name":"Furina","odds":12348,"image":"furina2.jpg"},
@@ -277,8 +283,11 @@
 {"name":"Phainon","odds":7777,"image":"phainon3.jpg"},
 {"name":"Sage","odds":42542,"image":"sage.jpg"},
 {"name":"Sage","odds":12341,"image":"sage2.jpg"},
+{"name":"Sage","odds":264570,"image":"sage3.jpg"},
 {"name":"Reyna","odds":57687,"image":"reyna.jpg"},
 {"name":"Reyna","odds":569538,"image":"reyna2.jpg"},
+{"name":"Reyna","odds":441226,"image":"reyna3.jpg"},
+{"name":"Fade","odds":252859,"image":"fade.jpg"},
 {"name":"Male Jett","odds":76989,"image":"malejett.jpg"},
 {"name":"Jett","odds":86588,"image":"jett.jpg"},
 {"name":"Chamber","odds":50000,"image":"chamber.jpg"},
@@ -315,6 +324,7 @@
 
 {"name":"Hyacine","odds":6890,"image":"hyacine.jpg"},
 {"name":"Jiaoqiu","odds":6921,"image":"jiaoqiu.jpg"},
+{"name":"Qiuyuan","odds":32297,"image":"qiuyuan.jpg"},
 
 {"name":"Yuno Gasai","odds":34276,"image":"yunogasai.jpg"},
 
@@ -378,6 +388,7 @@
 
 {"name":"Feixiao","odds":4583,"image":"feixiao.jpg"},
 {"name":"Luna Snow","odds":15555,"image":"lunasnow.jpg"},
+{"name":"Alhaitham","odds":3334,"image":"alhaitham.jpg"},
 
 {"name":"Lynae","odds":55,"image":"lynae.jpg"},
 {"name":"Lynae","odds":790,"image":"lynae2.jpg"},
