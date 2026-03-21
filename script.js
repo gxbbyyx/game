@@ -89,6 +89,24 @@ const QUEST_POOL = [
     reward: { gold: 250 }
   },
   {
+    type: "roll",
+    title: "Roll 50 times",
+    goal: 50,
+    reward: { gold: 320 }
+  },
+  {
+    type: "roll",
+    title: "Roll 100 times",
+    goal: 100,
+    reward: { gold: 500 }
+  },
+  {
+    type: "roll",
+    title: "Roll 250 times",
+    goal: 250,
+    reward: { luck: 5 }
+  },
+  {
     type: "keep",
     title: "Keep 2 cards",
     goal: 2,
@@ -99,6 +117,12 @@ const QUEST_POOL = [
     title: "Keep 5 cards",
     goal: 5,
     reward: { gold: 350 }
+  },
+    {
+    type: "keep",
+    title: "Keep 10 cards",
+    goal: 10,
+    reward: { gold: 450 }
   },
   {
     type: "discover",
@@ -111,6 +135,18 @@ const QUEST_POOL = [
     title: "Discover 5 cards",
     goal: 5,
     reward: { gold: 200 }
+  },
+  {
+    type: "discover",
+    title: "Discover 10 cards",
+    goal: 10,
+    reward: { gold: 350 }
+  },
+  {
+    type: "discover",
+    title: "Discover 40 cards",
+    goal: 40,
+    reward: { luck: 10 }
   }
 ];
 
