@@ -79,10 +79,20 @@
 {"name":"Nefer","odds":589000,"image":"nefer.jpg"},
 
 {"name":"Cai Lin","odds":586496,"image":"medusa.jpg"},
+{"name":"Cai Lin","odds":125324,"image":"medusa2.jpg"},
+{"name":"Cai Lin","odds":251918,"image":"medusa3.jpg"},
 {"name":"Gu Xun Er","odds":333333,"image":"xuner.jpg"},
-{"name":"Gu Xun Er","odds":222222,"image":"xuner2.jpg"},  
+{"name":"Gu Xun Er","odds":222222,"image":"xuner2.jpg"},
+{"name":"Gu Xun Er","odds":270264,"image":"xuner3.jpg"},  
+{"name":"Gu Xun Er","odds":470293,"image":"xuner4.jpg"},  
+{"name":"Zi Yan","odds":304118,"image":"ziyan.jpg"},  
+{"name":"Zi Yan","odds":128530,"image":"ziyan.jpg"},  
+{"name":"Xiao Yan","odds":240411,"image":"xiaoyan.jpg"},  
 
 {"name":"Wang Lin","odds":424355,"image":"wanglin.jpg"},    
+{"name":"Wang Lin","odds":236568,"image":"wanglin2.jpg"},   
+{"name":"Wang Lin","odds":427331,"image":"wanglin3.jpg"},   
+{"name":"Wang Lin","odds":74562,"image":"wanglin4.jpg"},   
 {"name":"Li Muwan","odds":399287,"image":"limuwan.jpg"},
 {"name":"Li Muwan","odds":324222,"image":"limuwan2.jpg"},
 {"name":"Li Muwan","odds":544444,"image":"limuwan3.jpg"},
@@ -304,6 +314,8 @@
 
 {"name":"Hyacine","odds":6890,"image":"hyacine.jpg"},
 {"name":"Jiaoqiu","odds":6921,"image":"jiaoqiu.jpg"},
+
+{"name":"Yuno Gasai","odds":34276,"image":"yunogasai.jpg"},
 
 {"name":"Black Cat","odds":12000,"image":"blackcat.jpg"},
 {"name":"Black Cat","odds":777777,"image":"blackcat2.jpg"},
