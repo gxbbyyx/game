@@ -144,12 +144,20 @@
 {"name":"Nessa","odds":6855,"image":"nessa3.jpg"},
 {"name":"Corbeau","odds":2226,"image":"corbeau.jpg"},
 {"name":"Dawn","odds":46,"image":"dawn.jpg"},
+{"name":"Gwynn","odds":331,"image":"Gwynn.jpg"},
+{"name":"Jacinthe","odds":225,"image":"jacinthe.jpg"},
+{"name":"Primarina","odds":246,"image":"primarina.jpg"},
+{"name":"Diancie","odds":368,"image":"diancie.jpg"},
+{"name":"Gardevoir","odds":40,"image":"gardevoir.jpg"},
+{"name":"Frosslass","odds":94,"image":"frosslass.jpg"},
 
 {"name":"Neuvillette","odds":65467,"image":"neuvillette.jpg"},
 {"name":"Wriothesly","odds":11035,"image":"wriothesly.jpg"},
 {"name":"Jing Yuan","odds":23143,"image":"jingyuan.jpg"},
 
 {"name":"Mavuika","odds":9865,"image":"mavuika.jpg"},
+{"name":"Sandrone","odds":1577,"image":"sandrone.jpg"},
+{"name":"Sandrone","odds":5102,"image":"sandrone.jpg"},
 
 {"name":"Robin","odds":63420,"image":"robin.jpg"},
 {"name":"Robin","odds":244300,"image":"robin2.jpg"},
@@ -274,6 +282,7 @@
 
 {"name":"Dagger","odds":22433,"image":"dagger.jpg"},
 {"name":"Jeff the Landshark","odds":200,"image":"jeff.jpg"},
+{"name":"Jeff the Landshark","odds":401,"image":"jeff2.jpg"},
 
 {"name":"Ahri","odds":65366,"image":"ahri.jpg"},
 {"name":"Ahri","odds":31345,"image":"ahri2.jpg"},
@@ -363,6 +372,8 @@
 {"name":"Zibai","odds":63982,"image":"zibai4.jpg"},
 
 {"name":"Nicole","odds":45938,"image":"nicole.jpg"},
+{"name":"Escoffier","odds":10848,"image":"escoffier.jpg"},
+{"name":"Escoffier","odds":18444,"image":"escoffier2.jpg"},
 {"name":"Rogue","odds":10,"image":"rogue.jpg"},
 
 {"name":"Hysilens","odds":5,"image":"hysilens.jpg"},
