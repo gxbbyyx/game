@@ -292,7 +292,7 @@
 
 {"name":"Yelan","odds":30000,"image":"yelan.jpg"},
 {"name":"Wedding Yelan","odds":34266,"image":"yelan2.jpg"},
-{"name":"Yelan","odds":29702,"image":"yelan3.jpg"},
+{"name":"Yelan","odds":34266,"image":"yelan3.jpg"},
 {"name":"Yoimiya","odds":34289,"image":"yoimiya.jpg"},
 {"name":"Clorinde","odds":24000,"image":"clorinde.jpg"},
 {"name":"Lauma","odds":15000,"image":"lauma.jpg"},
@@ -303,6 +303,7 @@
 {"name":"Evernight","odds":278316,"image":"evernight4.jpg"},
 
 {"name":"Hyacine","odds":6890,"image":"hyacine.jpg"},
+{"name":"Jiaoqiu","odds":6921,"image":"jiaoqiu.jpg"},
 
 {"name":"Black Cat","odds":12000,"image":"blackcat.jpg"},
 {"name":"Black Cat","odds":777777,"image":"blackcat2.jpg"},
