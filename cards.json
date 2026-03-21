@@ -286,6 +286,7 @@
 {"name":"Rosalina","odds":57788,"image":"rosalina2.jpg"},
 {"name":"Rosalina","odds":42321,"image":"rosalina3.jpg"},
 {"name":"Princess Peach","odds":53332,"image":"peach.jpg"},
+{"name":"Princess Peach","odds":14228,"image":"peach2.jpg"},
 
 {"name":"Varka","odds":32577,"image":"varka.jpg"},
 {"name":"Varka","odds":600000,"image":"varka2.jpg"},
@@ -319,6 +320,8 @@
 
 {"name":"Black Cat","odds":12000,"image":"blackcat.jpg"},
 {"name":"Black Cat","odds":777777,"image":"blackcat2.jpg"},
+{"name":"Black Cat","odds":655951,"image":"blackcat3.jpg"},
+{"name":"Black Cat","odds":488846,"image":"blackcat4.jpg"},
 
 {"name":"Emma Frost","odds":850000,"image":"emmafrost.jpg"},
 
