@@ -56,6 +56,7 @@
 {"name":"Mydei","odds":100000,"image":"mydei2.jpg"},
 {"name":"Mydei","odds":70000,"image":"mydei3.jpg"},
 {"name":"Mydei","odds":2342,"image":"mydei4.jpg"},
+{"name":"Mydei","odds":6909,"image":"mydei5.jpg"},
 
 {"name":"Shenhe","odds":23999,"image":"shenhe.jpg"},
 {"name":"Shenhe","odds":563635,"image":"shenhe2.jpg"},
@@ -291,6 +292,7 @@
 
 {"name":"Yelan","odds":30000,"image":"yelan.jpg"},
 {"name":"Wedding Yelan","odds":34266,"image":"yelan2.jpg"},
+{"name":"Yelan","odds":29702,"image":"yelan3.jpg"},
 {"name":"Yoimiya","odds":34289,"image":"yoimiya.jpg"},
 {"name":"Clorinde","odds":24000,"image":"clorinde.jpg"},
 {"name":"Lauma","odds":15000,"image":"lauma.jpg"},
@@ -374,6 +376,7 @@
 {"name":"Nicole","odds":45938,"image":"nicole.jpg"},
 {"name":"Escoffier","odds":10848,"image":"escoffier.jpg"},
 {"name":"Escoffier","odds":18444,"image":"escoffier2.jpg"},
+{"name":"Escoffier","odds":21450,"image":"escoffier3.jpg"},
 {"name":"Rogue","odds":10,"image":"rogue.jpg"},
 
 {"name":"Hysilens","odds":5,"image":"hysilens.jpg"},
