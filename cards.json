@@ -74,6 +74,9 @@
 {"name":"Frieren and Himmel","odds":263165,"image":"frierenandhimmel.jpg"},
 
 {"name":"Yor Forger","odds":246352,"image":"yorforger.jpg"},
+{"name":"Loid Forger","odds":206411,"image":"loidforger.jpg"},
+
+{"name":"Kaguya Shinomiya","odds":366782,"image":"kaguyashinomiya.jpg"},
 
 {"name":"Elysia","odds":200000,"image":"elysia.jpg"},
 {"name":"Elysia","odds":669900,"image":"elysia2.jpg"},
@@ -330,6 +333,7 @@
 {"name":"Ahri","odds":31345,"image":"ahri2.jpg"},
 {"name":"Ahri","odds":1001,"image":"ahri3.jpg"},
 {"name":"Snow Moon Ahri","odds":102011,"image":"snowmoonahri.jpg"},
+{"name":"Soul Fighter Ahri","odds":11370,"image":"soulfighterahri.jpg"},
 
 {"name":"Yelan","odds":30000,"image":"yelan.jpg"},
 {"name":"Wedding Yelan","odds":34266,"image":"yelan2.jpg"},
