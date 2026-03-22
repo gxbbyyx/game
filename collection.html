@@ -88,8 +88,15 @@
       margin-bottom: 12px;
     }
 
-    .delete-btn {
-      width: 100%;
+    .card-buttons {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .card-buttons button {
+      flex: 1;
+      min-width: 90px;
     }
 
     .empty-collection {
@@ -114,142 +121,221 @@
       </div>
     </div>
 
-    <div id="ownedGrid" class="owned-grid"></div>
+    <div style="margin-bottom: 28px;">
+      <h2 style="margin-bottom: 12px;">Favorites</h2>
+      <div id="favoritesGrid" class="owned-grid"></div>
+    </div>
+
+    <div>
+      <h2 style="margin-bottom: 12px;">All Owned Cards</h2>
+      <div id="ownedGrid" class="owned-grid"></div>
+    </div>
   </div>
 
-  <script>
-    const SAVE_KEY = "rng_web_game_save_v4";
+<script>
+  const SAVE_KEY = "rng_web_game_save_v4";
 
-    function formatOdds(odds) {
-      return `1 in ${odds.toLocaleString()}`;
+  function formatOdds(odds) {
+    return `1 in ${odds.toLocaleString()}`;
+  }
+
+  function getRarity(character) {
+    const odds = character.odds;
+
+    if (odds <= 50) return "mortal";
+    if (odds <= 150) return "blessed";
+    if (odds <= 4000) return "astral";
+    if (odds <= 10000) return "ascended";
+    if (odds <= 30000) return "mythic";
+    if (odds <= 100000) return "divine";
+    if (odds <= 200000) return "ethereal";
+    if (odds <= 300000) return "celestial";
+    if (odds <= 500000) return "transcendant";
+    if (odds <= 650000) return "primordial";
+    if (odds <= 750000) return "cosmic";
+    return "eclipse";
+  }
+
+  function capitalize(text) {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  }
+
+  function isVideoFile(path) {
+    return /\.(mp4|webm|ogg)$/i.test(path);
+  }
+
+  function getCardId(card) {
+    return `${card.name}__${card.odds}__${card.image}`;
+  }
+
+  function toggleFavorite(cardToToggle) {
+    const raw = localStorage.getItem(SAVE_KEY);
+    if (!raw) return;
+
+    let data;
+
+    try {
+      data = JSON.parse(raw);
+    } catch {
+      return;
     }
 
-    function getRarity(character) {
-      const odds = character.odds;
-
-      if (odds <= 50) return "mortal";
-      if (odds <= 150) return "blessed";
-      if (odds <= 4000) return "astral";
-      if (odds <= 10000) return "ascended";
-      if (odds <= 30000) return "mythic";
-      if (odds <= 100000) return "divine";
-      if (odds <= 200000) return "ethereal";
-      if (odds <= 300000) return "celestial";
-      if (odds <= 500000) return "transcendant";
-      if (odds <= 650000) return "primordial";
-      if (odds <= 750000) return "cosmic";
-      return "eclipse";
+    if (!Array.isArray(data.favoriteCards)) {
+      data.favoriteCards = [];
     }
 
-    function capitalize(text) {
-      return text.charAt(0).toUpperCase() + text.slice(1);
+    if (!Array.isArray(data.keptCards)) {
+      data.keptCards = [];
     }
 
-    function isVideoFile(path) {
-      return /\.(mp4|webm|ogg)$/i.test(path);
+    const targetId = getCardId(cardToToggle);
+    const stillOwned = data.keptCards.some((card) => getCardId(card) === targetId);
+
+    if (!stillOwned) return;
+
+    if (data.favoriteCards.includes(targetId)) {
+      data.favoriteCards = data.favoriteCards.filter((id) => id !== targetId);
+    } else {
+      data.favoriteCards.push(targetId);
     }
 
-    function getCardId(card) {
-      return `${card.name}__${card.odds}__${card.image}`;
+    localStorage.setItem(SAVE_KEY, JSON.stringify(data));
+    renderCollection();
+  }
+
+  function deleteCard(cardToDelete) {
+    const raw = localStorage.getItem(SAVE_KEY);
+    if (!raw) return;
+
+    if (!confirm(`Delete ${cardToDelete.name} from your collection?`)) {
+      return;
     }
 
-    function deleteCard(cardToDelete) {
-      const raw = localStorage.getItem(SAVE_KEY);
-      if (!raw) return;
+    let data;
 
-      if (!confirm(`Delete ${cardToDelete.name} from your collection?`)) {
-        return;
-      }
-
-      let data;
-
-      try {
-        data = JSON.parse(raw);
-      } catch {
-        return;
-      }
-
-      const targetId = getCardId(cardToDelete);
-
-      data.keptCards = Array.isArray(data.keptCards)
-        ? data.keptCards.filter((card) => getCardId(card) !== targetId)
-        : [];
-
-      if (Array.isArray(data.discoveredCards)) {
-        data.discoveredCards = data.discoveredCards.filter((id) => id !== targetId);
-      }
-
-      if (Array.isArray(data.rollHistory)) {
-        data.rollHistory = data.rollHistory.filter((card) => getCardId(card) !== targetId);
-      }
-
-      if (data.currentRoll && getCardId(data.currentRoll) === targetId) {
-        data.currentRoll = null;
-      }
-
-      localStorage.setItem(SAVE_KEY, JSON.stringify(data));
-      renderCollection();
+    try {
+      data = JSON.parse(raw);
+    } catch {
+      return;
     }
 
-    function renderCollection() {
-      const raw = localStorage.getItem(SAVE_KEY);
-      const ownedGrid = document.getElementById("ownedGrid");
-      const collectionCount = document.getElementById("collectionCount");
+    const targetId = getCardId(cardToDelete);
 
-      if (!raw) {
-        collectionCount.textContent = "Owned: 0";
-        ownedGrid.innerHTML = `<div class="empty-collection">No owned cards yet.</div>`;
-        return;
-      }
+    data.keptCards = Array.isArray(data.keptCards)
+      ? data.keptCards.filter((card) => getCardId(card) !== targetId)
+      : [];
 
-      let keptCards = [];
+    if (Array.isArray(data.favoriteCards)) {
+      data.favoriteCards = data.favoriteCards.filter((id) => id !== targetId);
+    }
 
-      try {
-        const data = JSON.parse(raw);
-        keptCards = Array.isArray(data.keptCards) ? data.keptCards : [];
-      } catch {
-        collectionCount.textContent = "Owned: 0";
-        ownedGrid.innerHTML = `<div class="empty-collection">Failed to load collection.</div>`;
-        return;
-      }
+    if (Array.isArray(data.discoveredCards)) {
+      data.discoveredCards = data.discoveredCards.filter((id) => id !== targetId);
+    }
 
-      collectionCount.textContent = `Owned: ${keptCards.length}`;
+    if (Array.isArray(data.rollHistory)) {
+      data.rollHistory = data.rollHistory.filter((card) => getCardId(card) !== targetId);
+    }
 
-      if (keptCards.length === 0) {
-        ownedGrid.innerHTML = `<div class="empty-collection">No owned cards yet.</div>`;
-        return;
-      }
+    if (data.currentRoll && getCardId(data.currentRoll) === targetId) {
+      data.currentRoll = null;
+    }
 
-      ownedGrid.innerHTML = "";
+    localStorage.setItem(SAVE_KEY, JSON.stringify(data));
+    renderCollection();
+  }
 
-      keptCards.forEach((card) => {
-        const rarity = getRarity(card);
-        const wrapper = document.createElement("div");
-        wrapper.className = `owned-card card-shell rarity-${rarity} ${rarity}-border`;
+  function createCardElement(card, isFavoritedCard = false) {
+    const rarity = getRarity(card);
+    const wrapper = document.createElement("div");
+    wrapper.className = `owned-card card-shell rarity-${rarity} ${rarity}-border`;
 
-        const media = isVideoFile(card.image)
-          ? `<video src="${card.image}" autoplay muted loop playsinline></video>`
-          : `<img src="${card.image}" alt="${card.name}">`;
+    const media = isVideoFile(card.image)
+      ? `<video src="${card.image}" autoplay muted loop playsinline></video>`
+      : `<img src="${card.image}" alt="${card.name}">`;
 
-        wrapper.innerHTML = `
-          <div class="owned-media">${media}</div>
-          <div class="owned-info">
-            <div class="owned-name">${card.name}</div>
-            <div class="owned-rarity ${"rarity-" + rarity}">${capitalize(rarity)}</div>
-            <div class="owned-odds">${formatOdds(card.odds)}</div>
-            <button class="danger delete-btn" type="button">Delete</button>
-          </div>
-        `;
+    wrapper.innerHTML = `
+      <div class="owned-media">${media}</div>
+      <div class="owned-info">
+        <div class="owned-name">${isFavoritedCard ? "★ " : ""}${card.name}</div>
+        <div class="owned-rarity ${"rarity-" + rarity}">${capitalize(rarity)}</div>
+        <div class="owned-odds">${formatOdds(card.odds)}</div>
+        <div class="card-buttons">
+          <button class="favorite-btn" type="button">${isFavoritedCard ? "Unfavorite" : "Favorite"}</button>
+          <button class="danger delete-btn" type="button">Delete</button>
+        </div>
+      </div>
+    `;
 
-        wrapper.querySelector(".delete-btn").addEventListener("click", () => {
-          deleteCard(card);
-        });
+    wrapper.querySelector(".favorite-btn").addEventListener("click", () => {
+      toggleFavorite(card);
+    });
 
-        ownedGrid.appendChild(wrapper);
+    wrapper.querySelector(".delete-btn").addEventListener("click", () => {
+      deleteCard(card);
+    });
+
+    return wrapper;
+  }
+
+  function renderCollection() {
+    const raw = localStorage.getItem(SAVE_KEY);
+    const ownedGrid = document.getElementById("ownedGrid");
+    const favoritesGrid = document.getElementById("favoritesGrid");
+    const collectionCount = document.getElementById("collectionCount");
+
+    if (!raw) {
+      collectionCount.textContent = "Owned: 0";
+      favoritesGrid.innerHTML = `<div class="empty-collection">No favorite cards yet.</div>`;
+      ownedGrid.innerHTML = `<div class="empty-collection">No owned cards yet.</div>`;
+      return;
+    }
+
+    let keptCards = [];
+    let favoriteCards = [];
+
+    try {
+      const data = JSON.parse(raw);
+      keptCards = Array.isArray(data.keptCards) ? data.keptCards : [];
+      favoriteCards = Array.isArray(data.favoriteCards) ? data.favoriteCards : [];
+    } catch {
+      collectionCount.textContent = "Owned: 0";
+      favoritesGrid.innerHTML = `<div class="empty-collection">Failed to load favorites.</div>`;
+      ownedGrid.innerHTML = `<div class="empty-collection">Failed to load collection.</div>`;
+      return;
+    }
+
+    const favoriteOwnedCards = keptCards.filter((card) =>
+      favoriteCards.includes(getCardId(card))
+    );
+
+    const nonFavoriteOwnedCards = keptCards.filter((card) =>
+      !favoriteCards.includes(getCardId(card))
+    );
+
+    collectionCount.textContent = `Owned: ${nonFavoriteOwnedCards.length}`;
+
+    favoritesGrid.innerHTML = "";
+    ownedGrid.innerHTML = "";
+
+    if (favoriteOwnedCards.length === 0) {
+      favoritesGrid.innerHTML = `<div class="empty-collection">No favorite cards yet.</div>`;
+    } else {
+      favoriteOwnedCards.forEach((card) => {
+        favoritesGrid.appendChild(createCardElement(card, true));
       });
     }
 
-    renderCollection();
-  </script>
+    if (nonFavoriteOwnedCards.length === 0) {
+      ownedGrid.innerHTML = `<div class="empty-collection">No owned cards yet.</div>`;
+    } else {
+      nonFavoriteOwnedCards.forEach((card) => {
+        ownedGrid.appendChild(createCardElement(card, false));
+      });
+    }
+  }
+
+  renderCollection();
+</script>
 </body>
 </html>

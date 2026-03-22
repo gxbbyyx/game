@@ -2,6 +2,7 @@ let characters = [];
 
 let rollHistory = [];
 let keptCards = [];
+let favoriteCards = [];
 let rollCount = 0;
 let autoRolling = false;
 let luck = 1;
@@ -118,7 +119,7 @@ const QUEST_POOL = [
     goal: 5,
     reward: { gold: 350 }
   },
-    {
+  {
     type: "keep",
     title: "Keep 10 cards",
     goal: 10,
@@ -343,6 +344,14 @@ function ownsCard(character) {
   return keptCards.some((card) => getCardId(card) === id);
 }
 
+function isFavoritedCard(character) {
+  return favoriteCards.includes(getCardId(character));
+}
+
+function getOwnedCollectionCards() {
+  return keptCards.filter((card) => !favoriteCards.includes(getCardId(card)));
+}
+
 function getUniqueGalleryCards() {
   const seen = new Set();
   const unique = [];
@@ -363,7 +372,6 @@ function discoverCard(character) {
 
   if (!discoveredCards.includes(id)) {
     discoveredCards.push(id);
-
     updateQuests();
   }
 }
@@ -402,9 +410,10 @@ function updateStats() {
   const totalPotionMultiplier = getTotalPotionMultiplier();
   const potionSecondsLeft = getPotionSecondsLeft();
   const speedSecondsLeft = getSpeedSecondsLeft();
+  const ownedCollectionCards = getOwnedCollectionCards();
 
   counterLabel.textContent = `Rolls: ${rollCount}`;
-  keptCountLabel.textContent = `Kept: ${keptCards.length}`;
+  keptCountLabel.textContent = `Owned: ${ownedCollectionCards.length}`;
 
   let luckText = `Luck: ${luck}x`;
 
@@ -534,6 +543,7 @@ function removeKeptCardById(cardId) {
   if (index === -1) return;
 
   const [removed] = keptCards.splice(index, 1);
+  favoriteCards = favoriteCards.filter((id) => id !== cardId);
 
   updateKeptCards();
   updateGallery();
@@ -552,6 +562,7 @@ function removeDiscoveredCardById(cardId) {
 
   discoveredCards = discoveredCards.filter((id) => id !== cardId);
   keptCards = keptCards.filter((card) => getCardId(card) !== cardId);
+  favoriteCards = favoriteCards.filter((id) => id !== cardId);
   rollHistory = rollHistory.filter((card) => getCardId(card) !== cardId);
 
   if (currentRoll && getCardId(currentRoll) === cardId) {
@@ -575,12 +586,14 @@ function removeDiscoveredCardById(cardId) {
 function updateKeptCards() {
   keptCardsList.innerHTML = "";
 
-  if (keptCards.length === 0) {
-    keptCardsList.innerHTML = '<div class="empty">No kept cards yet.</div>';
+  const ownedCollectionCards = getOwnedCollectionCards();
+
+  if (ownedCollectionCards.length === 0) {
+    keptCardsList.innerHTML = '<div class="empty">No owned cards in collection.</div>';
     return;
   }
 
-  keptCards.forEach((item) => {
+  ownedCollectionCards.forEach((item) => {
     const rarity = getRarity(item);
 
     const div = document.createElement("div");
@@ -594,7 +607,7 @@ function updateKeptCards() {
     `;
 
     info.addEventListener("click", () => {
-      displayCharacter(item, "Viewing kept card:");
+      displayCharacter(item, "Viewing owned card:");
       playRevealSound(item);
     });
 
@@ -614,6 +627,7 @@ function updateGallery() {
     const rarity = getRarity(item);
     const owned = ownsCard(item);
     const cardId = getCardId(item);
+    const favorited = favoriteCards.includes(cardId);
 
     const div = document.createElement("div");
     div.className = `gallery-card ${borderClass(rarity)} ${discovered ? "" : "locked"} ${owned ? "owned" : ""}`;
@@ -622,10 +636,10 @@ function updateGallery() {
       const details = document.createElement("div");
       details.className = "gallery-details";
       details.innerHTML = `
-        <div class="gallery-name">${item.name}</div>
+        <div class="gallery-name">${item.name}${favorited ? " ★" : ""}</div>
         <div class="gallery-rarity">${capitalize(rarity)}</div>
         <div class="gallery-odds">${formatOdds(item.odds)}</div>
-        <div class="gallery-status">${owned ? "Owned" : "Seen"}</div>
+        <div class="gallery-status">${favorited ? "Favorited" : owned ? "Owned" : "Seen"}</div>
       `;
 
       details.addEventListener("click", () => {
@@ -921,6 +935,7 @@ function saveGame() {
   const data = {
     rollHistory,
     keptCards,
+    favoriteCards,
     rollCount,
     luck,
     currentRoll,
@@ -948,6 +963,7 @@ function loadGame() {
 
     rollHistory = Array.isArray(data.rollHistory) ? data.rollHistory : [];
     keptCards = Array.isArray(data.keptCards) ? data.keptCards : [];
+    favoriteCards = Array.isArray(data.favoriteCards) ? data.favoriteCards : [];
     rollCount = Number.isFinite(data.rollCount) ? data.rollCount : 0;
     luck = Number.isFinite(data.luck) ? data.luck : 1;
     currentRoll = data.currentRoll || null;
@@ -961,6 +977,10 @@ function loadGame() {
     quests = Array.isArray(data.quests) ? data.quests : [];
     completedQuestIds = Array.isArray(data.completedQuestIds) ? data.completedQuestIds : [];
     claimedQuestIds = Array.isArray(data.claimedQuestIds) ? data.claimedQuestIds : [];
+
+    favoriteCards = favoriteCards.filter((id) =>
+      keptCards.some((card) => getCardId(card) === id)
+    );
 
     ensureQuestSlots();
 
@@ -999,6 +1019,7 @@ function resetSave() {
 
   rollHistory = [];
   keptCards = [];
+  favoriteCards = [];
   rollCount = 0;
   luck = 1;
   currentRoll = null;
