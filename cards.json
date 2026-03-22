@@ -43,6 +43,11 @@
 {"name":"Hatsune Miku","odds":236435,"image":"hatsunemiku3.jpg"},
 {"name":"Hatsune Miku","odds":46422,"image":"hatsunemiku4.jpg"},
 {"name":"Hatsune Miku","odds":57658,"image":"hatsunemiku5.jpg"},
+{"name":"Hatsune Miku","odds":795556,"image":"hatsunemiku6.jpg"},
+{"name":"Hatsune Miku","odds":75233,"image":"hatsunemiku7.jpg"},
+{"name":"Hatsune Miku","odds":76155,"image":"hatsunemiku8.jpg"},
+{"name":"Hatsune Miku","odds":11724,"image":"hatsunemiku9.jpg"},
+{"name":"Hatsune Miku","odds":300275,"image":"hatsunemiku10.jpg"},
 {"name":"Diluc","odds":23233,"image":"diluc.jpg"},
 {"name":"Mizuki","odds":12406,"image":"mizuki.jpg"},
 {"name":"Lingsha","odds":800,"image":"lingsha.jpg"},
@@ -63,6 +68,7 @@
 {"name":"Shenhe","odds":31133,"image":"shenhe3.jpg"},
 {"name":"Yae Miko","odds":6598,"image":"yaemiko.jpg"},
 {"name":"Ada Wong","odds":145000,"image":"adawong.jpg"},
+{"name":"Grace Ashcroft","odds":64114,"image":"graceashcroft.jpg"},
 {"name":"Frieren","odds":5666,"image":"frieren.jpg"},
 {"name":"Frieren","odds":127335,"image":"frieren2.jpg"},
 {"name":"Frieren","odds":134887,"image":"frieren3.jpg"},
@@ -72,6 +78,7 @@
 
 {"name":"Elysia","odds":200000,"image":"elysia.jpg"},
 {"name":"Elysia","odds":669900,"image":"elysia2.jpg"},
+{"name":"Elysia","odds":104318,"image":"elysia3.jpg"},
 
 {"name":"Aemeath","odds":29138,"image":"aemeath.jpg"},
 {"name":"Aemeath","odds":435221,"image":"aemeath2.jpg"},
@@ -120,6 +127,7 @@
 {"name":"The Herta","odds":767666,"image":"herta6.jpg"},
 {"name":"The Herta","odds":43231,"image":"herta7.jpg"},
 {"name":"The Herta","odds":968799,"image":"herta8.jpg"},
+{"name":"The Herta","odds":280565,"image":"herta9.jpg"},
 
 {"name":"Dan Heng","odds":13550,"image":"danheng.jpg"},
 {"name":"Dan Heng","odds":88700,"image":"danheng2.jpg"},
@@ -139,7 +147,7 @@
 {"name":"Raiden Shogun","odds":366000,"image":"raidenshogun3.jpg"},
 {"name":"Raiden Shogun","odds":432000,"image":"raidenshogun4.jpg"},
 {"name":"Raiden Shogun","odds":700000,"image":"raidenshogun5.jpg"},
-
+{"name":"Raiden Shogun","odds":166184,"image":"raidenshogun6.jpg"},
 {"name":"Silverwing N:EX Bronya","odds":15623,"image":"bronyazaychik.jpg"},
 
 {"name":"Iono","odds":2522,"image":"iono.jpg"},
@@ -206,14 +214,19 @@
 
 {"name":"Sparxie","odds":23989,"image":"sparxie.jpg"},
 {"name":"Sparxie","odds":34525,"image":"sparxie2.jpg"},
+{"name":"Sparxie","odds":40249,"image":"sparxie3.jpg"},
 {"name":"Jingliu","odds": 75694,"image":"jingliu.jpg"},
+{"name":"Lumine","odds": 159095,"image":"lumine.jpg"},
 
 {"name":"Jade","odds":1400,"image":"jade.jpg"},
 {"name":"Jade","odds":6533,"image":"jade2.jpg"},
 
+{"name":"Juno","odds":202135,"image":"juno.jpg"},
+
 {"name":"Brant","odds":565,"image":"brant.jpg"},
 {"name":"Skirk","odds":87700,"image":"skirk.jpg"},
 {"name":"Skirk","odds":123421,"image":"skirk2.jpg"},
+{"name":"Skirk","odds":175086,"image":"skirk3.jpg"},
 {"name":"Alice","odds":156000,"image":"alice.jpg"},
 {"name":"Alice","odds":475777,"image":"alice2.jpg"},
 {"name":"Alice","odds":423522,"image":"alice3.jpg"},
@@ -222,12 +235,16 @@
 
 {"name":"Dainsleif","odds":5654,"image":"dainsleif.jpg"},
 {"name":"Dainsleif","odds":7889,"image":"dainsleif2.jpg"},
-{"name":"Nilou","odds":3456,"image":"nilou2.jpg"},
 {"name":"Tribios","odds":355677,"image":"tribios.jpg"},
 {"name":"Tribios","odds":511000,"image":"tribios2.jpg"},
 {"name":"Raven","odds":169000,"image":"raven.jpg"},
 {"name":"Nightwing","odds":202000,"image":"nightwing.jpg"},
 {"name":"Nightwing","odds":606060,"image":"nightwing2.jpg"},
+{"name":"Nightwing","odds":706204,"image":"nightwing3.jpg"},
+
+{"name":"Bucky Barnes","odds":399284,"image":"bucky.jpg"},
+{"name":"Lara Croft","odds":748474,"image":"laracroft.jpg"},
+
 
 {"name":"Ruan Mei","odds":239180,"image":"ruanmei.jpg"},
 {"name":"Ruan Mei","odds":12355,"image":"ruanmei2.jpg"},
@@ -236,6 +253,9 @@
 {"name":"Ruan Mei","odds":78756,"image":"ruanmei5.jpg"},
 
 {"name":"Phrolova","odds":99000,"image":"phrolova.jpg"},
+{"name":"Phrolova","odds":67747,"image":"phrolova2.jpg"},
+{"name":"Phrolova","odds":944350,"image":"phrolova3.jpg"},
+{"name":"Phrolova","odds":149476,"image":"phrolova4.jpg"},
 
 {"name":"Lu Jinghe","odds":99999,"image":"marius.jpg"},
 {"name":"Lu Jinghe","odds":111111,"image":"marius2.jpg"},
@@ -360,7 +380,11 @@
 {"name":"Jinhsi","odds":26466,"image":"jinhsi2.jpg"},
 {"name":"Jean","odds":120,"image":"jean.jpg"},
 {"name":"Eula","odds":843,"image":"eula.jpg"},
+{"name":"Eula","odds":1371,"image":"eula2.jpg"},
+{"name":"Eula","odds":188954,"image":"eula3.jpg"},
 {"name":"Nilou","odds":9007,"image":"nilou.jpg"},
+{"name":"Nilou","odds":3456,"image":"nilou2.jpg"},
+{"name":"Nilou","odds":81287,"image":"nilou3.jpg"},
 {"name":"Ningguang","odds":340,"image":"ningguang.jpg"},
 {"name":"March 7th","odds":6849,"image":"march7th.jpg"},
 {"name":"Yinlin","odds":8,"image":"yinlin.jpg"},
@@ -387,6 +411,17 @@
 {"name":"Shorekeeper","odds":150,"image":"shorekeeper.jpg"},
 {"name":"Shorekeeper","odds":880890,"image":"shorekeeper2.jpg"},
 
+{"name":"Hinomori Shizuku","odds":188716,"image":"hinomorishizuku.jpg"},
+{"name":"Airi Momoi","odds":186616,"image":"airimomoi.jpg"},
+{"name":"Yoisaki Kanade","odds":189250,"image":"yoisakikanade.jpg"},
+{"name":"Yoisaki Kanade","odds":58573,"image":"yoisakikanade2.jpg"},
+{"name":"Yoisaki Kanade","odds":92543,"image":"yoisakikanade3.jpg"},
+{"name":"Akiyama Mizuki","odds":72769,"image":"akiyamamizuki.jpg"},
+{"name":"Akiyama Mizuki","odds":88178,"image":"akiyamamizuki2.jpg"},
+
+{"name":"Ganyu","odds":19579,"image":"ganyu.jpg"},
+{"name":"Ganyu","odds":13096,"image":"ganyu2.jpg"},
+
 {"name":"Cantarella","odds":80,"image":"cantarella.jpg"},
 {"name":"Cantarella","odds":900,"image":"cantarella2.jpg"},
 {"name":"Cantarella","odds":5555,"image":"cantarella3.jpg"},
@@ -400,6 +435,7 @@
 {"name":"Lynae","odds":790,"image":"lynae2.jpg"},
 {"name":"Lynae","odds":3300,"image":"lynae3.jpg"},
 {"name":"Lynae","odds":65989,"image":"lynae4.jpg"},
+{"name":"Lynae","odds":70743,"image":"lynae5.jpg"},
 
 {"name":"Zibai","odds":20,"image":"zibai.jpg"},
 {"name":"Zibai","odds":67,"image":"zibai2.jpg"},
