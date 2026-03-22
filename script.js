@@ -1336,10 +1336,10 @@ function buyBigPotionFromShop() {
 
 function buyPermanentLuckUpgrade() {
   if (!spendGold(1500)) return;
-  luck += 3;
+  luck += 5;
   updateStats();
   saveGame();
-  resultLabel.textContent = "Bought Permanent +3 Base Luck!";
+  resultLabel.textContent = "Bought Permanent +5 Base Luck!";
 }
 
 function buySpeedPotionFromShop() {
