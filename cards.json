@@ -247,6 +247,7 @@
 {"name":"Alice","odds":423522,"image":"alice3.jpg"},
 {"name":"Alice","odds":685555,"image":"alice4.jpg"},
 {"name":"Alice","odds":799999,"image":"alice5.jpg"},
+{"name":"Alice","odds":883493,"image":"alice6.jpg"},
 
 {"name":"Dainsleif","odds":5654,"image":"dainsleif.jpg"},
 {"name":"Dainsleif","odds":7889,"image":"dainsleif2.jpg"},
@@ -318,6 +319,7 @@
 {"name":"Phainon","odds":67474,"image":"phainon2.jpg"},
 {"name":"Phainon","odds":5321,"image":"phainon2.jpg"},
 {"name":"Phainon","odds":7777,"image":"phainon3.jpg"},
+{"name":"Phainon","odds":103686,"image":"phainon4.jpg"},
 {"name":"Sage","odds":42542,"image":"sage.jpg"},
 {"name":"Sage","odds":12341,"image":"sage2.jpg"},
 {"name":"Sage","odds":264570,"image":"sage3.jpg"},
