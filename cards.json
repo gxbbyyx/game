@@ -29,6 +29,8 @@
 {"name":"Cartethyia","odds":666000,"image":"cartethyia.jpg"},
 {"name":"Cartethyia","odds":5550,"image":"cartethyia2.jpg"},
 {"name":"Cartethyia","odds":877777,"image":"cartethyia3.jpg"},
+{"name":"Cartethyia","odds":233801,"image":"cartethyia4.jpg"},
+{"name":"Cartethyia","odds":802372,"image":"cartethyia5.jpg"},
 
 {"name":"Castorice","odds":3522,"image":"castorice.jpg"},
 {"name":"Castorice","odds":5493,"image":"castorice2.jpg"},
@@ -67,11 +69,13 @@
 {"name":"Shenhe","odds":31133,"image":"shenhe3.jpg"},
 {"name":"Yae Miko","odds":6598,"image":"yaemiko.jpg"},
 {"name":"Ada Wong","odds":145000,"image":"adawong.jpg"},
+{"name":"Leon Kennedy","odds":711183,"image":"leonkennedy.jpg"},
 {"name":"Grace Ashcroft","odds":64114,"image":"graceashcroft.jpg"},
 {"name":"Frieren","odds":5666,"image":"frieren.jpg"},
 {"name":"Frieren","odds":127335,"image":"frieren2.jpg"},
 {"name":"Frieren","odds":134887,"image":"frieren3.jpg"},
 {"name":"Frieren and Himmel","odds":263165,"image":"frierenandhimmel.jpg"},
+{"name":"Frieren and Himmel","odds":623209,"image":"frierenandhimmel2.jpg"},
 
 {"name":"Yor Forger","odds":246352,"image":"yorforger.jpg"},
 {"name":"Loid Forger","odds":206411,"image":"loidforger.jpg"},
@@ -81,6 +85,7 @@
 {"name":"Elysia","odds":200000,"image":"elysia.jpg"},
 {"name":"Elysia","odds":669900,"image":"elysia2.jpg"},
 {"name":"Elysia","odds":104318,"image":"elysia3.jpg"},
+{"name":"Elysia","odds":770952,"image":"elysia4.jpg"},
 
 {"name":"Aemeath","odds":29138,"image":"aemeath.jpg"},
 {"name":"Aemeath","odds":435221,"image":"aemeath2.jpg"},
@@ -130,6 +135,12 @@
 {"name":"The Herta","odds":43231,"image":"herta7.jpg"},
 {"name":"The Herta","odds":968799,"image":"herta8.jpg"},
 {"name":"The Herta","odds":280565,"image":"herta9.jpg"},
+{"name":"The Herta","odds":794632,"image":"herta10.jpg"},
+{"name":"The Herta","odds":105754,"image":"herta11.jpg"},
+{"name":"The Herta","odds":831374,"image":"herta12.jpg"},
+{"name":"The Herta","odds":219042,"image":"herta13.jpg"},
+{"name":"The Herta","odds":22422,"image":"herta14.jpg"},
+{"name":"The Herta","odds":516963,"image":"herta15.jpg"},
 
 {"name":"Dan Heng","odds":13550,"image":"danheng.jpg"},
 {"name":"Dan Heng","odds":88700,"image":"danheng2.jpg"},
@@ -142,6 +153,7 @@
 {"name":"The Dahlia","odds":250000,"image":"dahlia.jpg"},
 {"name":"The Dahlia","odds":67658,"image":"dahlia2.jpg"},
 {"name":"Kiana Kaslana","odds":150000,"image":"kiana.jpg"},
+{"name":"Kiana Kaslana","odds":338734,"image":"kiana2.jpg"},
 {"name":"Raiden Mei","odds":130000,"image":"raidenmei.jpg"},
 
 {"name":"Raiden Shogun","odds":195000,"image":"raidenshogun.jpg"},
@@ -301,6 +313,7 @@
 {"name":"Fugue","odds":453566,"image":"fugue2.jpg"},
 {"name":"Fugue","odds":68788,"image":"fugue3.jpg"},
 {"name":"Fugue","odds":11000,"image":"fugue4.jpg"},
+{"name":"Fugue","odds":168954,"image":"fugue5.jpg"},
 
 {"name":"Phainon","odds":67474,"image":"phainon2.jpg"},
 {"name":"Phainon","odds":5321,"image":"phainon2.jpg"},
@@ -315,6 +328,10 @@
 {"name":"Male Jett","odds":76989,"image":"malejett.jpg"},
 {"name":"Jett","odds":86588,"image":"jett.jpg"},
 {"name":"Chamber","odds":50000,"image":"chamber.jpg"},
+{"name":"Chamber","odds":62245,"image":"chamber2.jpg"},
+{"name":"Chamber","odds":674173,"image":"chamber3.jpg"},
+{"name":"Chamber","odds":848358,"image":"chamber4.jpg"},
+{"name":"Chamber","odds":471459,"image":"chamber5.jpg"},
 {"name":"Rosalina","odds":42677,"image":"rosalina.jpg"},
 {"name":"Rosalina","odds":57788,"image":"rosalina2.jpg"},
 {"name":"Rosalina","odds":42321,"image":"rosalina3.jpg"},
@@ -363,6 +380,7 @@
 {"name":"Black Cat","odds":488846,"image":"blackcat4.jpg"},
 
 {"name":"Emma Frost","odds":850000,"image":"emmafrost.jpg"},
+{"name":"Emma Frost","odds":806124,"image":"emmafrost2.jpg"},
 
 {"name":"Galbrena","odds":2100,"image":"galbrena.jpg"},
 {"name":"Galbrena","odds":664989,"image":"galbrena2.jpg"},
