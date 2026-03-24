@@ -25,8 +25,6 @@
 {"name":"Arlecchino","odds":21398,"image":"arlecchino5.jpg"},
 {"name":"Arlecchino","odds":463632,"image":"arlecchino6.jpg"},
 
-{"name":"Firefly","odds":46588,"image":"firely.jpg"},
-
 {"name":"Cartethyia","odds":666000,"image":"cartethyia.jpg"},
 {"name":"Cartethyia","odds":5550,"image":"cartethyia2.jpg"},
 {"name":"Cartethyia","odds":877777,"image":"cartethyia3.jpg"},
@@ -194,7 +192,6 @@
 {"name":"Frosslass","odds":94,"image":"frosslass.jpg"},
 
 {"name":"Neuvillette","odds":65467,"image":"neuvillette.jpg"},
-{"name":"Wriothesly","odds":11035,"image":"wriothesly.jpg"},
 {"name":"Jing Yuan","odds":23143,"image":"jingyuan.jpg"},
 
 {"name":"Mavuika","odds":9865,"image":"mavuika.jpg"},
