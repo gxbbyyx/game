@@ -6,6 +6,7 @@
 {"name":"Fleurdelys","odds":170945,"image":"fleurdelys5.jpg"},
 {"name":"Fleurdelys","odds":800000,"image":"fleurdelys6.jpg"},
 {"name":"Fleurdelys","odds":342456,"image":"fleurdelys7.jpg"},
+{"name":"Fleurdelys","odds":613074,"image":"fleurdelys8.jpg"},
 
 {"name":"Carlotta","odds":676000,"image":"carlotta.jpg"},
 {"name":"Carlotta","odds":8888,"image":"carlotta2.jpg"},
@@ -31,6 +32,7 @@
 {"name":"Cartethyia","odds":877777,"image":"cartethyia3.jpg"},
 {"name":"Cartethyia","odds":233801,"image":"cartethyia4.jpg"},
 {"name":"Cartethyia","odds":802372,"image":"cartethyia5.jpg"},
+{"name":"Wedding Cartethyia","odds":994240,"image":"cartethyia6.jpg"},
 
 {"name":"Castorice","odds":3522,"image":"castorice.jpg"},
 {"name":"Castorice","odds":5493,"image":"castorice2.jpg"},
@@ -330,6 +332,8 @@
 {"name":"Fade","odds":252859,"image":"fade.jpg"},
 {"name":"Male Jett","odds":76989,"image":"malejett.jpg"},
 {"name":"Jett","odds":86588,"image":"jett.jpg"},
+{"name":"Jett","odds":83076,"image":"jett2.jpg"},
+{"name":"Omen","odds":100466,"image":"omen.jpg"},
 {"name":"Chamber","odds":50000,"image":"chamber.jpg"},
 {"name":"Chamber","odds":62245,"image":"chamber2.jpg"},
 {"name":"Chamber","odds":674173,"image":"chamber3.jpg"},
@@ -338,6 +342,7 @@
 {"name":"Rosalina","odds":42677,"image":"rosalina.jpg"},
 {"name":"Rosalina","odds":57788,"image":"rosalina2.jpg"},
 {"name":"Rosalina","odds":42321,"image":"rosalina3.jpg"},
+{"name":"Rosalina","odds":198510,"image":"rosalina4.jpg"},
 {"name":"Princess Peach","odds":53332,"image":"peach.jpg"},
 {"name":"Princess Peach","odds":14228,"image":"peach2.jpg"},
 
@@ -352,6 +357,7 @@
 {"name":"Ahri","odds":65366,"image":"ahri.jpg"},
 {"name":"Ahri","odds":31345,"image":"ahri2.jpg"},
 {"name":"Ahri","odds":1001,"image":"ahri3.jpg"},
+{"name":"Ahri","odds":6525,"image":"ahri4.jpg"},
 {"name":"Snow Moon Ahri","odds":102011,"image":"snowmoonahri.jpg"},
 {"name":"Soul Fighter Ahri","odds":11370,"image":"soulfighterahri.jpg"},
 {"name":"Coven Ahri","odds":54802,"image":"covenahri.jpg"},
