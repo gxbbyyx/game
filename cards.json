@@ -326,11 +326,13 @@
 {"name":"Reyna","odds":57687,"image":"reyna.jpg"},
 {"name":"Reyna","odds":569538,"image":"reyna2.jpg"},
 {"name":"Reyna","odds":441226,"image":"reyna3.jpg"},
+{"name":"Reyna","odds":583038,"image":"reyna4.jpg"},
 {"name":"Fade","odds":252859,"image":"fade.jpg"},
 {"name":"Male Jett","odds":76989,"image":"malejett.jpg"},
 {"name":"Jett","odds":86588,"image":"jett.jpg"},
 {"name":"Jett","odds":83076,"image":"jett2.jpg"},
 {"name":"Omen","odds":100466,"image":"omen.jpg"},
+{"name":"Cypher","odds":59769,"image":"cypher.jpg"},
 {"name":"Chamber","odds":50000,"image":"chamber.jpg"},
 {"name":"Chamber","odds":62245,"image":"chamber2.jpg"},
 {"name":"Chamber","odds":674173,"image":"chamber3.jpg"},
@@ -391,6 +393,7 @@
 
 {"name":"Emma Frost","odds":850000,"image":"emmafrost.jpg"},
 {"name":"Emma Frost","odds":806124,"image":"emmafrost2.jpg"},
+{"name":"Emma Frost","odds":880731,"image":"emmafrost3.jpg"},
 
 {"name":"Galbrena","odds":2100,"image":"galbrena.jpg"},
 {"name":"Galbrena","odds":664989,"image":"galbrena2.jpg"},
