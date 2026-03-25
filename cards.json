@@ -238,6 +238,8 @@
 
 {"name":"Juno","odds":202135,"image":"juno.jpg"},
 {"name":"Juno","odds":638592,"image":"juno2.jpg"},
+{"name":"Juno","odds":580281,"image":"juno3.jpg"},
+{"name":"Juno","odds":470754,"image":"juno4.jpg"},
 
 {"name":"Brant","odds":565,"image":"brant.jpg"},
 {"name":"Skirk","odds":87700,"image":"skirk.jpg"},
@@ -392,6 +394,7 @@
 {"name":"Black Cat","odds":777777,"image":"blackcat2.jpg"},
 {"name":"Black Cat","odds":655951,"image":"blackcat3.jpg"},
 {"name":"Black Cat","odds":488846,"image":"blackcat4.jpg"},
+{"name":"Black Cat","odds":988769,"image":"blackcat5.jpg"},
 
 {"name":"Emma Frost","odds":850000,"image":"emmafrost.jpg"},
 {"name":"Emma Frost","odds":806124,"image":"emmafrost2.jpg"},
@@ -463,6 +466,7 @@
 {"name":"Cantarella","odds":900,"image":"cantarella2.jpg"},
 {"name":"Cantarella","odds":5555,"image":"cantarella3.jpg"},
 {"name":"Cantarella","odds":87575,"image":"cantarella4.jpg"},
+{"name":"Cantarella","odds":290137,"image":"cantarella5.jpg"},
 
 {"name":"Feixiao","odds":4583,"image":"feixiao.jpg"},
 {"name":"Luna Snow","odds":15555,"image":"lunasnow.jpg"},
