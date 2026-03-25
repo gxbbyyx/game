@@ -92,6 +92,8 @@
 {"name":"Aemeath","odds":435221,"image":"aemeath2.jpg"},
 {"name":"Aemeath","odds":24298,"image":"aemeath3.jpg"},
 {"name":"Aemeath","odds":65948,"image":"aemeath4.jpg"},
+{"name":"Aemeath","odds":496218,"image":"aemeath5.jpg"},
+{"name":"Aemeath","odds":526012,"image":"aemeath6.jpg"},
 
 {"name":"Roccia","odds":3427,"image":"roccia.jpg"},
 
@@ -251,11 +253,14 @@
 {"name":"Alice","odds":685555,"image":"alice4.jpg"},
 {"name":"Alice","odds":799999,"image":"alice5.jpg"},
 {"name":"Alice","odds":883493,"image":"alice6.jpg"},
+{"name":"Alice","odds":252427,"image":"alice7.jpg"},
+{"name":"Alice","odds":569391,"image":"alice8.jpg"},
 
 {"name":"Dainsleif","odds":5654,"image":"dainsleif.jpg"},
 {"name":"Dainsleif","odds":7889,"image":"dainsleif2.jpg"},
 {"name":"Tribios","odds":355677,"image":"tribios.jpg"},
 {"name":"Tribios","odds":511000,"image":"tribios2.jpg"},
+{"name":"Tribios","odds":378125,"image":"tribios3.jpg"},
 {"name":"Raven","odds":169000,"image":"raven.jpg"},
 {"name":"Nightwing","odds":202000,"image":"nightwing.jpg"},
 {"name":"Nightwing","odds":606060,"image":"nightwing2.jpg"},
@@ -264,12 +269,14 @@
 {"name":"Bucky Barnes","odds":399284,"image":"bucky.jpg"},
 {"name":"Lara Croft","odds":748474,"image":"laracroft.jpg"},
 
+{"name":"Wonder Woman","odds":371496,"image":"wonderwoman.jpg"},
 
 {"name":"Ruan Mei","odds":239180,"image":"ruanmei.jpg"},
 {"name":"Ruan Mei","odds":12355,"image":"ruanmei2.jpg"},
 {"name":"Ruan Mei","odds":983,"image":"ruanmei3.jpg"},
 {"name":"Ruan Mei","odds":44539,"image":"ruanmei4.jpg"},
 {"name":"Ruan Mei","odds":78756,"image":"ruanmei5.jpg"},
+{"name":"Ruan Mei","odds":202109,"image":"ruanmei6.jpg"},
 
 {"name":"Phrolova","odds":99000,"image":"phrolova.jpg"},
 {"name":"Phrolova","odds":67747,"image":"phrolova2.jpg"},
@@ -320,6 +327,8 @@
 {"name":"Fugue","odds":11000,"image":"fugue4.jpg"},
 {"name":"Fugue","odds":168954,"image":"fugue5.jpg"},
 
+{"name":"Jinx","odds":161786,"image":"jinx.jpg"},
+
 {"name":"Phainon","odds":67474,"image":"phainon2.jpg"},
 {"name":"Phainon","odds":5321,"image":"phainon2.jpg"},
 {"name":"Phainon","odds":7777,"image":"phainon3.jpg"},
@@ -332,6 +341,10 @@
 {"name":"Reyna","odds":441226,"image":"reyna3.jpg"},
 {"name":"Reyna","odds":583038,"image":"reyna4.jpg"},
 {"name":"Fade","odds":252859,"image":"fade.jpg"},
+{"name":"Neon","odds":222042,"image":"neon.jpg"},
+{"name":"Iso","odds":81805,"image":"iso.jpg"},
+{"name":"Viper","odds":77343,"image":"viper.jpg"},
+{"name":"Gekko","odds":204465,"image":"gekko.jpg"},
 {"name":"Male Jett","odds":76989,"image":"malejett.jpg"},
 {"name":"Jett","odds":86588,"image":"jett.jpg"},
 {"name":"Jett","odds":83076,"image":"jett2.jpg"},
@@ -399,6 +412,7 @@
 {"name":"Emma Frost","odds":850000,"image":"emmafrost.jpg"},
 {"name":"Emma Frost","odds":806124,"image":"emmafrost2.jpg"},
 {"name":"Emma Frost","odds":880731,"image":"emmafrost3.jpg"},
+{"name":"Emma Frost","odds":661862,"image":"emmafrost4.jpg"},
 
 {"name":"Galbrena","odds":2100,"image":"galbrena.jpg"},
 {"name":"Galbrena","odds":664989,"image":"galbrena2.jpg"},
