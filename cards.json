@@ -55,6 +55,7 @@
 {"name":"Silverwolf","odds":88888,"image":"silverwolf.jpg"},
 {"name":"Silverwolf","odds":24334,"image":"silverwolf2.jpg"},
 {"name":"Silverwolf","odds":13122,"image":"silverwolf3.jpg"},
+{"name":"Silverwolf","odds":49390,"image":"silverwolf4.jpg"},
 {"name":"Blade","odds":2315,"image":"blade.jpg"},
 {"name":"Blade","odds":111111,"image":"blade2.jpg"},
 
@@ -237,6 +238,7 @@
 
 {"name":"Jade","odds":1400,"image":"jade.jpg"},
 {"name":"Jade","odds":6533,"image":"jade2.jpg"},
+{"name":"Denia","odds": 7704,"image":"denia.jpg"},
 
 {"name":"Juno","odds":202135,"image":"juno.jpg"},
 {"name":"Juno","odds":638592,"image":"juno2.jpg"},
@@ -361,6 +363,8 @@
 {"name":"Rosalina","odds":198510,"image":"rosalina4.jpg"},
 {"name":"Princess Peach","odds":53332,"image":"peach.jpg"},
 {"name":"Princess Peach","odds":14228,"image":"peach2.jpg"},
+
+{"name":"Killjoy and Raze","odds":698133,"image":"nanobomb.jpg"},
 
 {"name":"Varka","odds":32577,"image":"varka.jpg"},
 {"name":"Varka","odds":600000,"image":"varka2.jpg"},
