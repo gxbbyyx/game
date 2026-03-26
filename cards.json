@@ -166,6 +166,7 @@
 {"name":"Raiden Shogun","odds":432000,"image":"raidenshogun4.jpg"},
 {"name":"Raiden Shogun","odds":700000,"image":"raidenshogun5.jpg"},
 {"name":"Raiden Shogun","odds":166184,"image":"raidenshogun6.jpg"},
+{"name":"Raiden Shogun","odds":14303,"image":"raidenshogun7.jpg"},
 {"name":"Silverwing N:EX Bronya","odds":15623,"image":"bronyazaychik.jpg"},
 {"name":"Seele","odds":86016,"image":"seele.jpg"},
 
@@ -239,6 +240,8 @@
 {"name":"Jade","odds":1400,"image":"jade.jpg"},
 {"name":"Jade","odds":6533,"image":"jade2.jpg"},
 {"name":"Denia","odds": 7704,"image":"denia.jpg"},
+{"name":"Denia","odds": 6396,"image":"denia2.jpg"},
+{"name":"Hiyuki","odds": 8190,"image":"hiyuki.jpg"},
 
 {"name":"Juno","odds":202135,"image":"juno.jpg"},
 {"name":"Juno","odds":638592,"image":"juno2.jpg"},
@@ -312,6 +315,7 @@
 {"name":"Iuno","odds":4633,"image":"iuno2.jpg"},
 {"name":"Iuno","odds":9648,"image":"iuno3.jpg"},
 {"name":"Iuno","odds":650000,"image":"iuno4.jpg"},
+{"name":"Iuno","odds":3398,"image":"iuno5.jpg"},
 
 {"name":"Zani","odds":1248,"image":"zani.jpg"},
 
