@@ -72,10 +72,12 @@
 {"name":"Ada Wong","odds":145000,"image":"adawong.jpg"},
 {"name":"Leon Kennedy","odds":711183,"image":"leonkennedy.jpg"},
 {"name":"Leon Kennedy","odds":728753,"image":"leonkennedy2.jpg"},
+{"name":"Leon Kennedy","odds":801809,"image":"leonkennedy3.jpg"},
 {"name":"Grace Ashcroft","odds":64114,"image":"graceashcroft.jpg"},
 {"name":"Frieren","odds":5666,"image":"frieren.jpg"},
 {"name":"Frieren","odds":127335,"image":"frieren2.jpg"},
 {"name":"Frieren","odds":134887,"image":"frieren3.jpg"},
+{"name":"Frieren","odds":61004,"image":"frieren4.jpg"},
 {"name":"Frieren and Himmel","odds":263165,"image":"frierenandhimmel.jpg"},
 {"name":"Frieren and Himmel","odds":623209,"image":"frierenandhimmel2.jpg"},
 
@@ -95,6 +97,7 @@
 {"name":"Aemeath","odds":65948,"image":"aemeath4.jpg"},
 {"name":"Aemeath","odds":496218,"image":"aemeath5.jpg"},
 {"name":"Aemeath","odds":526012,"image":"aemeath6.jpg"},
+{"name":"Aemeath","odds":829976,"image":"aemeath7.jpg"},
 
 {"name":"Roccia","odds":3427,"image":"roccia.jpg"},
 
@@ -183,6 +186,7 @@
 {"name":"Serena","odds":1000,"image":"serena.jpg"},
 {"name":"Serena","odds":120000,"image":"serena2.jpg"},
 {"name":"Lida","odds":6000,"image":"lida.jpg"},
+{"name":"Canari","odds":6914,"image":"canari.jpg"},
 {"name":"Cynthia","odds":2000,"image":"cynthia.jpg"},
 {"name":"Nessa","odds":342,"image":"nessa.jpg"},
 {"name":"Nessa","odds":56498,"image":"nessa2.jpg"},
@@ -195,6 +199,7 @@
 {"name":"Diancie","odds":368,"image":"diancie.jpg"},
 {"name":"Gardevoir","odds":40,"image":"gardevoir.jpg"},
 {"name":"Frosslass","odds":94,"image":"frosslass.jpg"},
+{"name":"Hisuian Zorua","odds":24035,"image":"hisuianzorua.jpg"},
 
 {"name":"Neuvillette","odds":65467,"image":"neuvillette.jpg"},
 {"name":"Jing Yuan","odds":23143,"image":"jingyuan.jpg"},
@@ -242,6 +247,7 @@
 {"name":"Denia","odds": 7704,"image":"denia.jpg"},
 {"name":"Denia","odds": 6396,"image":"denia2.jpg"},
 {"name":"Hiyuki","odds": 8190,"image":"hiyuki.jpg"},
+{"name":"Hiyuki","odds": 17738,"image":"hiyuki2.jpg"},
 
 {"name":"Juno","odds":202135,"image":"juno.jpg"},
 {"name":"Juno","odds":638592,"image":"juno2.jpg"},
@@ -268,6 +274,7 @@
 {"name":"Tribios","odds":378125,"image":"tribios3.jpg"},
 {"name":"Raven","odds":169000,"image":"raven.jpg"},
 {"name":"Raven","odds":626269,"image":"raven2.jpg"},
+{"name":"Raven","odds":26375,"image":"raven3.jpg"},
 {"name":"Nightwing","odds":202000,"image":"nightwing.jpg"},
 {"name":"Nightwing","odds":606060,"image":"nightwing2.jpg"},
 {"name":"Nightwing","odds":706204,"image":"nightwing3.jpg"},
@@ -350,6 +357,8 @@
 {"name":"Reyna","odds":583038,"image":"reyna4.jpg"},
 {"name":"Fade","odds":252859,"image":"fade.jpg"},
 {"name":"Fade","odds":354374,"image":"fade2.jpg"},
+{"name":"Fade","odds":577393,"image":"fade3.jpg"},
+{"name":"Fade","odds":987285,"image":"fade4.jpg"},
 {"name":"Fade and Deadlock","odds":389586,"image":"fadelock.jpg"},
 {"name":"Neon","odds":222042,"image":"neon.jpg"},
 {"name":"Neon","odds":513436,"image":"neon2.jpg"},
@@ -517,6 +526,9 @@
 {"name":"Zibai","odds":67,"image":"zibai2.jpg"},
 {"name":"Zibai","odds":222222,"image":"zibai3.jpg"},
 {"name":"Zibai","odds":63982,"image":"zibai4.jpg"},
+{"name":"Zibai","odds":97641,"image":"zibai5.jpg"},
+
+{"name":"Yao Guang","odds":41193,"image":"yaoguang.jpg"},
 
 {"name":"Nicole","odds":45938,"image":"nicole.jpg"},
 {"name":"Escoffier","odds":10848,"image":"escoffier.jpg"},
