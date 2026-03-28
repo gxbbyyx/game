@@ -383,6 +383,7 @@
 {"name":"Rosalina","odds":198510,"image":"rosalina4.jpg"},
 {"name":"Princess Peach","odds":53332,"image":"peach.jpg"},
 {"name":"Princess Peach","odds":14228,"image":"peach2.jpg"},
+{"name":"Princess Peach","odds":323566,"image":"peach3.jpg"},
 
 {"name":"Killjoy and Raze","odds":698133,"image":"nanobomb.jpg"},
 
@@ -391,6 +392,11 @@
 {"name":"Kokomi","odds":32145,"image":"kokomi.jpg"},
 
 {"name":"Dagger","odds":22433,"image":"dagger.jpg"},
+{"name":"Dagger","odds":711941,"image":"dagger2.jpg"},
+{"name":"Psylocke","odds":125291,"image":"psylocke.jpg"},
+{"name":"Invisible Woman","odds":365048,"image":"invisiblewoman.jpg"},
+{"name":"Invisible Woman","odds":203582,"image":"invisiblewoman2.jpg"},
+{"name":"Wanda Maximoff","odds":95173,"image":"wanda.jpg"},
 {"name":"Jeff the Landshark","odds":200,"image":"jeff.jpg"},
 {"name":"Jeff the Landshark","odds":401,"image":"jeff2.jpg"},
 
@@ -442,10 +448,12 @@
 {"name":"Emma Frost","odds":880731,"image":"emmafrost3.jpg"},
 {"name":"Emma Frost","odds":661862,"image":"emmafrost4.jpg"},
 {"name":"Emma Frost","odds":656270,"image":"emmafrost5.jpg"},
+{"name":"Emma Frost","odds":940599,"image":"emmafrost6.jpg"},
 
 {"name":"Galbrena","odds":2100,"image":"galbrena.jpg"},
 {"name":"Galbrena","odds":664989,"image":"galbrena2.jpg"},
 {"name":"Galbrena","odds":69045,"image":"galbrena3.jpg"},
+{"name":"Galbrena","odds":782980,"image":"galbrena4.jpg"},
 
 {"name":"Keqing","odds":4500,"image":"keqing.jpg"},
 
@@ -491,6 +499,7 @@
 {"name":"Star Nemesis Morgana","odds":11000,"image":"starnemesismorgana.jpg"},
 {"name":"Dawnbringer Morgana","odds":333000,"image":"dawnbringermorgana.jpg"},
 {"name":"Spirit Blossom Irelia","odds":84054,"image":"irelia.jpg"},
+{"name":"Lillia","odds":340339,"image":"lillia.jpg"},
 
 {"name":"Shorekeeper","odds":150,"image":"shorekeeper.jpg"},
 {"name":"Shorekeeper","odds":880890,"image":"shorekeeper2.jpg"},
