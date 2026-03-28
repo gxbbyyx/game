@@ -90,6 +90,7 @@
 {"name":"Elysia","odds":669900,"image":"elysia2.jpg"},
 {"name":"Elysia","odds":104318,"image":"elysia3.jpg"},
 {"name":"Elysia","odds":770952,"image":"elysia4.jpg"},
+{"name":"Elysia","odds":954831,"image":"elysia5.jpg"},
 
 {"name":"Aemeath","odds":29138,"image":"aemeath.jpg"},
 {"name":"Aemeath","odds":435221,"image":"aemeath2.jpg"},
@@ -148,6 +149,7 @@
 {"name":"The Herta","odds":219042,"image":"herta13.jpg"},
 {"name":"The Herta","odds":22422,"image":"herta14.jpg"},
 {"name":"The Herta","odds":516963,"image":"herta15.jpg"},
+{"name":"The Herta","odds":816364,"image":"herta16.jpg"},
 
 {"name":"Dan Heng","odds":13550,"image":"danheng.jpg"},
 {"name":"Dan Heng","odds":88700,"image":"danheng2.jpg"},
@@ -162,6 +164,7 @@
 {"name":"Kiana Kaslana","odds":150000,"image":"kiana.jpg"},
 {"name":"Kiana Kaslana","odds":338734,"image":"kiana2.jpg"},
 {"name":"Raiden Mei","odds":130000,"image":"raidenmei.jpg"},
+{"name":"Seele Vollerei","odds":447905,"image":"seelevollerei.jpg"},
 
 {"name":"Raiden Shogun","odds":195000,"image":"raidenshogun.jpg"},
 {"name":"Raiden Shogun","odds":233000,"image":"raidenshogun2.jpg"},
@@ -177,7 +180,10 @@
 {"name":"Iono","odds":2522,"image":"iono2.jpg"},
 {"name":"Lopunny","odds":468,"image":"lopunny.jpg"},
 {"name":"Buneary","odds":897,"image":"buneary.jpg"},
+{"name":"Buneary","odds":653,"image":"buneary2.jpg"},
 {"name":"Hatterene","odds":89,"image":"hatterene.jpg"},
+{"name":"Hatterene","odds":14,"image":"hatterene2.jpg"},
+{"name":"Espeon","odds":513,"image":"espeon.jpg"},
 {"name":"Pombon","odds":500,"image":"pombon.jpg"},
 {"name":"Jirachi","odds":498,"image":"jirachi.jpg"},
 {"name":"Victini","odds":661,"image":"victini.jpg"},
@@ -359,6 +365,7 @@
 {"name":"Fade","odds":354374,"image":"fade2.jpg"},
 {"name":"Fade","odds":577393,"image":"fade3.jpg"},
 {"name":"Fade","odds":987285,"image":"fade4.jpg"},
+{"name":"Fade","odds":776236,"image":"fade5.jpg"},
 {"name":"Reyna and Sage","odds":643982,"image":"reyge.jpg"},
 {"name":"Fade and Deadlock","odds":389586,"image":"fadelock.jpg"},
 {"name":"Fade and Neon","odds":546480,"image":"fadeshock.jpg"},
