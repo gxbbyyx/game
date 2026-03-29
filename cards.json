@@ -7,6 +7,8 @@
 {"name":"Fleurdelys","odds":800000,"image":"fleurdelys6.jpg"},
 {"name":"Fleurdelys","odds":342456,"image":"fleurdelys7.jpg"},
 {"name":"Fleurdelys","odds":613074,"image":"fleurdelys8.jpg"},
+{"name":"Fleurdelys","odds":272227,"image":"fleurdelys9.jpg"},
+{"name":"Wedding Fleurdelys","odds":628633,"image":"fleurdelys10.jpg"},
 
 {"name":"Carlotta","odds":676000,"image":"carlotta.jpg"},
 {"name":"Carlotta","odds":8888,"image":"carlotta2.jpg"},
@@ -15,6 +17,7 @@
 {"name":"Carlotta","odds":454398,"image":"carlotta5.jpg"},
 {"name":"Carlotta","odds":76555,"image":"carlotta6.jpg"},
 {"name":"Carlotta","odds":76888,"image":"carlotta7.jpg"},
+{"name":"Carlotta","odds":199031,"image":"carlotta8.jpg"},
 
 {"name":"Camellya","odds":23255,"image":"camellya.jpg"},
 {"name":"Columbina","odds":56444,"image":"columbina.jpg"},
@@ -31,6 +34,10 @@
 {"name":"Cartethyia","odds":233801,"image":"cartethyia4.jpg"},
 {"name":"Cartethyia","odds":802372,"image":"cartethyia5.jpg"},
 {"name":"Wedding Cartethyia","odds":994240,"image":"cartethyia6.jpg"},
+{"name":"Cartethyia","odds":228728,"image":"cartethyia7.jpg"},
+{"name":"Cartethyia","odds":309678,"image":"cartethyia8.jpg"},
+{"name":"Cartethyia","odds":478425,"image":"cartethyia9.jpg"},
+{"name":"Rover and Cartethyia","odds":871167,"image":"roverandcartethyia.jpg"},
 
 {"name":"Castorice","odds":3522,"image":"castorice.jpg"},
 {"name":"Castorice","odds":5493,"image":"castorice2.jpg"},
@@ -103,6 +110,7 @@
 {"name":"Roccia","odds":3427,"image":"roccia.jpg"},
 
 {"name":"Baizhi","odds":3528,"image":"baizhi.jpg"},
+{"name":"Baizhi","odds":117711,"image":"baizhi2.jpg"},
 {"name":"Nefer","odds":589000,"image":"nefer.jpg"},
 
 {"name":"Cai Lin","odds":586496,"image":"medusa.jpg"},
@@ -211,6 +219,7 @@
 {"name":"Jing Yuan","odds":23143,"image":"jingyuan.jpg"},
 
 {"name":"Mavuika","odds":9865,"image":"mavuika.jpg"},
+{"name":"Xilonen","odds":6248,"image":"xilonen.jpg"},
 {"name":"Sandrone","odds":1577,"image":"sandrone.jpg"},
 {"name":"Sandrone","odds":5102,"image":"sandrone.jpg"},
 
@@ -303,6 +312,7 @@
 {"name":"Phrolova","odds":67747,"image":"phrolova2.jpg"},
 {"name":"Phrolova","odds":944350,"image":"phrolova3.jpg"},
 {"name":"Phrolova","odds":149476,"image":"phrolova4.jpg"},
+{"name":"Phrolova","odds":943275,"image":"phrolova5.jpg"},
 
 {"name":"Lu Jinghe","odds":99999,"image":"marius.jpg"},
 {"name":"Lu Jinghe","odds":111111,"image":"marius2.jpg"},
@@ -423,6 +433,7 @@
 
 {"name":"Caitlyn Kiramman","odds":785806,"image":"caitlyn.jpg"},
 {"name":"Caitlyn Kiramman","odds":551900,"image":"caitlyn2.jpg"},
+{"name":"Caitlyn Kiramman","odds":294152,"image":"caitlyn3.jpg"},
 {"name":"Vi","odds":252729,"image":"vi.jpg"},
 {"name":"Vi","odds":11005,"image":"vi2.jpg"},
 {"name":"Vi","odds":38580,"image":"vi3.jpg"},
@@ -518,6 +529,7 @@
 
 {"name":"Shorekeeper","odds":150,"image":"shorekeeper.jpg"},
 {"name":"Shorekeeper","odds":880890,"image":"shorekeeper2.jpg"},
+{"name":"Shorekeeper","odds":633413,"image":"shorekeeper3.jpg"},
 
 {"name":"Blonde Blazer","odds":778969,"image":"blondeblazer.jpg"},
 
