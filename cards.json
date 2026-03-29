@@ -264,6 +264,7 @@
 {"name":"Skirk","odds":87700,"image":"skirk.jpg"},
 {"name":"Skirk","odds":123421,"image":"skirk2.jpg"},
 {"name":"Skirk","odds":175086,"image":"skirk3.jpg"},
+{"name":"Skirk","odds":448176,"image":"skirk4.jpg"},
 {"name":"Alice","odds":156000,"image":"alice.jpg"},
 {"name":"Alice","odds":475777,"image":"alice2.jpg"},
 {"name":"Alice","odds":423522,"image":"alice3.jpg"},
@@ -281,6 +282,7 @@
 {"name":"Raven","odds":169000,"image":"raven.jpg"},
 {"name":"Raven","odds":626269,"image":"raven2.jpg"},
 {"name":"Raven","odds":26375,"image":"raven3.jpg"},
+{"name":"Raven","odds":812806,"image":"raven4.jpg"},
 {"name":"Nightwing","odds":202000,"image":"nightwing.jpg"},
 {"name":"Nightwing","odds":606060,"image":"nightwing2.jpg"},
 {"name":"Nightwing","odds":706204,"image":"nightwing3.jpg"},
@@ -423,6 +425,7 @@
 {"name":"Caitlyn Kiramman","odds":551900,"image":"caitlyn2.jpg"},
 {"name":"Vi","odds":252729,"image":"vi.jpg"},
 {"name":"Vi","odds":11005,"image":"vi2.jpg"},
+{"name":"Vi","odds":38580,"image":"vi3.jpg"},
 
 {"name":"Yelan","odds":30000,"image":"yelan.jpg"},
 {"name":"Wedding Yelan","odds":34266,"image":"yelan2.jpg"},
@@ -511,9 +514,12 @@
 {"name":"Dawnbringer Morgana","odds":333000,"image":"dawnbringermorgana.jpg"},
 {"name":"Spirit Blossom Irelia","odds":84054,"image":"irelia.jpg"},
 {"name":"Lillia","odds":340339,"image":"lillia.jpg"},
+{"name":"Lillia","odds":42770,"image":"lillia2.jpg"},
 
 {"name":"Shorekeeper","odds":150,"image":"shorekeeper.jpg"},
 {"name":"Shorekeeper","odds":880890,"image":"shorekeeper2.jpg"},
+
+{"name":"Blonde Blazer","odds":778969,"image":"blondeblazer.jpg"},
 
 {"name":"Hinomori Shizuku","odds":188716,"image":"hinomorishizuku.jpg"},
 {"name":"Airi Momoi","odds":186616,"image":"airimomoi.jpg"},
@@ -556,6 +562,7 @@
 {"name":"Escoffier","odds":21450,"image":"escoffier3.jpg"},
 {"name":"Rogue","odds":10,"image":"rogue.jpg"},
 {"name":"Rogue","odds":572553,"image":"rogue2.jpg"},
+{"name":"Rogue and Gambit","odds":274276,"image":"rogueandgambit.jpg"},
 
 {"name":"Hysilens","odds":5,"image":"hysilens.jpg"},
 {"name":"Hysilens","odds":69,"image":"hysilens2.jpg"},
