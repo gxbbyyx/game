@@ -158,6 +158,7 @@
 {"name":"The Herta","odds":22422,"image":"herta14.jpg"},
 {"name":"The Herta","odds":516963,"image":"herta15.jpg"},
 {"name":"The Herta","odds":816364,"image":"herta16.jpg"},
+{"name":"The Herta","odds":515190,"image":"herta17.jpg"},
 
 {"name":"Dan Heng","odds":13550,"image":"danheng.jpg"},
 {"name":"Dan Heng","odds":88700,"image":"danheng2.jpg"},
@@ -183,6 +184,9 @@
 {"name":"Raiden Shogun","odds":14303,"image":"raidenshogun7.jpg"},
 {"name":"Silverwing N:EX Bronya","odds":15623,"image":"bronyazaychik.jpg"},
 {"name":"Seele","odds":86016,"image":"seele.jpg"},
+
+{"name":"Hu Tao","odds":209574,"image":"hutao.jpg"},
+{"name":"Sigrika","odds":166731,"image":"sigrika.jpg"},
 
 {"name":"Iono","odds":2522,"image":"iono.jpg"},
 {"name":"Iono","odds":2522,"image":"iono2.jpg"},
@@ -254,6 +258,7 @@
 {"name":"Sparxie","odds":23989,"image":"sparxie.jpg"},
 {"name":"Sparxie","odds":34525,"image":"sparxie2.jpg"},
 {"name":"Sparxie","odds":40249,"image":"sparxie3.jpg"},
+{"name":"Sparkle","odds":116113,"image":"sparkle.jpg"},
 {"name":"Jingliu","odds": 75694,"image":"jingliu.jpg"},
 {"name":"Lumine","odds": 159095,"image":"lumine.jpg"},
 
@@ -390,6 +395,7 @@
 {"name":"Viper","odds":515193,"image":"viper2.jpg"},
 {"name":"Deadlock","odds":365286,"image":"deadlock.jpg"},
 {"name":"Gekko","odds":204465,"image":"gekko.jpg"},
+{"name":"Miks","odds":163820,"image":"miks.jpg"},
 {"name":"Male Jett","odds":76989,"image":"malejett.jpg"},
 {"name":"Jett","odds":86588,"image":"jett.jpg"},
 {"name":"Jett","odds":83076,"image":"jett2.jpg"},
