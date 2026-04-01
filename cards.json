@@ -21,6 +21,7 @@
 
 {"name":"Camellya","odds":23255,"image":"camellya.jpg"},
 {"name":"Columbina","odds":56444,"image":"columbina.jpg"},
+{"name":"Columbina","odds":229321,"image":"columbina2.jpg"},
 {"name":"Arlecchino","odds":31411,"image":"arlecchino.jpg"},
 {"name":"Arlecchino","odds":757655,"image":"arlecchino2.jpg"},
 {"name":"Arlecchino","odds":246788,"image":"arlecchino3.jpg"},
@@ -81,6 +82,7 @@
 {"name":"Leon Kennedy","odds":711183,"image":"leonkennedy.jpg"},
 {"name":"Leon Kennedy","odds":728753,"image":"leonkennedy2.jpg"},
 {"name":"Leon Kennedy","odds":801809,"image":"leonkennedy3.jpg"},
+{"name":"Leon Kennedy","odds":342695,"image":"leonkennedy4.jpg"},
 {"name":"Grace Ashcroft","odds":64114,"image":"graceashcroft.jpg"},
 {"name":"Frieren","odds":5666,"image":"frieren.jpg"},
 {"name":"Frieren","odds":127335,"image":"frieren2.jpg"},
@@ -367,6 +369,7 @@
 {"name":"Fugue","odds":168954,"image":"fugue5.jpg"},
 
 {"name":"Jinx","odds":161786,"image":"jinx.jpg"},
+{"name":"Jinx","odds":848358,"image":"jinx2.jpg"},
 
 {"name":"Phainon","odds":67474,"image":"phainon2.jpg"},
 {"name":"Phainon","odds":5321,"image":"phainon2.jpg"},
@@ -477,6 +480,9 @@
 {"name":"Black Cat","odds":655951,"image":"blackcat3.jpg"},
 {"name":"Black Cat","odds":488846,"image":"blackcat4.jpg"},
 {"name":"Black Cat","odds":988769,"image":"blackcat5.jpg"},
+{"name":"Black Cat","odds":417416,"image":"blackcat6.jpg"},
+
+{"name":"Mary Jane","odds":13211,"image":"maryjane.jpg"},
 
 {"name":"Emma Frost","odds":850000,"image":"emmafrost.jpg"},
 {"name":"Emma Frost","odds":806124,"image":"emmafrost2.jpg"},
@@ -584,6 +590,9 @@
 {"name":"Escoffier","odds":21450,"image":"escoffier3.jpg"},
 {"name":"Rogue","odds":10,"image":"rogue.jpg"},
 {"name":"Rogue","odds":572553,"image":"rogue2.jpg"},
+{"name":"Rogue","odds":519179,"image":"rogue3.jpg"},
+{"name":"Rogue","odds":943010,"image":"rogue4.jpg"},
+{"name":"Rogue","odds":522567,"image":"rogue5.jpg"},
 {"name":"Rogue and Gambit","odds":274276,"image":"rogueandgambit.jpg"},
 
 {"name":"Hysilens","odds":5,"image":"hysilens.jpg"},
