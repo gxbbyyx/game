@@ -31,6 +31,8 @@
 {"name":"Arlecchino","odds":725289,"image":"arlecchino7.jpg"},
 {"name":"Arlecchino","odds":771983,"image":"arlecchino8.jpg"},
 
+{"name":"Evanescia","odds":400230,"image":"evanescia.jpg"},
+
 {"name":"Cartethyia","odds":666000,"image":"cartethyia.jpg"},
 {"name":"Cartethyia","odds":5550,"image":"cartethyia2.jpg"},
 {"name":"Cartethyia","odds":877777,"image":"cartethyia3.jpg"},
@@ -339,6 +341,7 @@
 {"name":"Tartaglia","odds":213,"image":"tartaglia.jpg"},
 {"name":"Tartaglia","odds":67565,"image":"tartaglia2.jpg"},
 {"name":"Tartaglia","odds":7987,"image":"tartaglia3.jpg"},
+{"name":"Tartaglia","odds":222292,"image":"tartaglia4.jpg"},
 
 {"name":"Capitano","odds":644,"image":"capitano.jpg"},
 
@@ -418,9 +421,12 @@
 {"name":"Rosalina","odds":57788,"image":"rosalina2.jpg"},
 {"name":"Rosalina","odds":42321,"image":"rosalina3.jpg"},
 {"name":"Rosalina","odds":198510,"image":"rosalina4.jpg"},
+{"name":"Rosalina","odds":622419,"image":"rosalina5.jpg"},
+{"name":"Rosalina","odds":464966,"image":"rosalina6.jpg"},
 {"name":"Princess Peach","odds":53332,"image":"peach.jpg"},
 {"name":"Princess Peach","odds":14228,"image":"peach2.jpg"},
 {"name":"Princess Peach","odds":323566,"image":"peach3.jpg"},
+{"name":"Princess Peach","odds":545410,"image":"peach4.jpg"},
 
 {"name":"Killjoy and Raze","odds":698133,"image":"nanobomb.jpg"},
 
@@ -547,6 +553,7 @@
 {"name":"Shorekeeper","odds":150,"image":"shorekeeper.jpg"},
 {"name":"Shorekeeper","odds":880890,"image":"shorekeeper2.jpg"},
 {"name":"Shorekeeper","odds":633413,"image":"shorekeeper3.jpg"},
+{"name":"Shorekeeper","odds":500102,"image":"shorekeeper4.jpg"},
 
 {"name":"Blonde Blazer","odds":778969,"image":"blondeblazer.jpg"},
 
